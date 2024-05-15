@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js no-svg">
+
+<head>
+  <title>Investment Expert | Niveshaay | Surat</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body data-barba="wrapper" class="after-login ">
+  <div class="layer-transition">
+    <div class="layer behind"></div>
+    <div class="layer above"></div>
+  </div>
+  <div id="site-wrap" class="site">
+    <div id="header-wrap" class="is-clearfix">
+      <header class="niveshaay-header">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="logo-wrapper">
+              <a class="site-logo" href="index.html" title="Niveshaay">
+                <img src="images/logo.png" alt="Site- Logo" />
+              </a>
+            </div>
+            <div class="right-header-wrapper">
+              <div class="navigation-wrapper">
+                <nav class="bottom-header-wrapper">
+                  <ul>
+                    <li class="active">
+                      <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                      <a href="about.html" title="About Us">About Us</a>
+                    </li>
+                    <li>
+                      <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                      <a href="our-strategy.html" title="Research Process">Our Strategy </a>
+                    </li>
+                    <li>
+                      <a href="research_reports.html" title="Our Research">Our Research</a>
+                    </li>
+                    <li>
+                      <a href="blog.html" title="Blogs">Blog</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" title="Contact Us">Contact Us</a>
+                    </li>
+
+                    <li class="btn login-btn">
+                      <a href="#" title="Login/Signup" data-link="login-modal"
+                        class="modal-link btn btn-green">Login/Signup </a>
+                    </li>
+                    <li class="btn">
+                      <a href="https://niveshaay.smallcase.com/" title="Visit Smallcase " target="_blank"
+                        class="btn btn-green">Visit Smallcase </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="profile-block">
+                  <div class="profile-img">
+                    <img src="./images/profile-icon.svg" alt="profile-img">
+                    <span>Arvind Kothari </span>
+                  </div>
+                  <span> <img src="./images/down-arrow.svg" alt="down-arrow"> </span>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" title="My Profile">My Profile</a> </li>
+                    <li><a href="#" title="Change Password">Change Password</a> </li>
+                    <li><a href="#" title="Log Out">Log Out</a> </li>
+                  </ul>
+                </div>
+                <div class="hamburger">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+                  <span class="bar3"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div id="login-modal" class="custom-modal" data-tab="login-modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content-inner">
+          <div class="modal-body custom-form-section">
+            <a href="#" title="Close" class="modal-close">
+              <img src="images/close.svg" alt="close-btn" />
+            </a>
+            <div class="form-wrapper">
+              <div class="form-inner-wrapper">
+                <a class="site-logo" href="#" title="Logo">
+                  <img src="images/logo.png" alt="Site- Logo" />
+                </a>
+                <p>Log in to Niveshaay</p>
+                <form class="contact-us-form" method="POST" action="https://www.niveshaay.com/front-login">
+                  <input type="hidden" name="_token" value="slEnJpPtl9Mrkc8PDskoR8YVcFnTbDXpdf7A1bZ3" />
+                  <div class="form-outer-wrapper">
+                    <div class="form-group">
+                      <label for="email_or_phone_no">Email Address</label>
+                      <input id="email_or_phone_no" name="email" type="text" class="form-control"
+                        placeholder="Enter email" required />
+
+                      <span style="color: red" id="login-modal-email-error"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input id="password" name="password" type="password" class="form-control" placeholder="**********"
+                        required />
+
+                      <span style="color: red" id="login-modal-error"></span>
+                    </div>
+                    <div class="form-group has-checkbox">
+                      <span class="password-help"><a href="forgot-password.html" title="Forgot Password">Forgot
+                          Password?</a></span>
+                    </div>
+                    <div class="form-group form-btn-wrapper">
+                      <button type="submit" class="btn btn-green" title="Login">
+                        Login
+                      </button>
+                      <button type="button" class="btn btn-green signup-link" data-link="signup-modal" title="Sign Up"
+                        onclick="location.href = 'signup.html' ">
+                        Sign Up
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="edit-profile-popup" class="custom-modal edit-profile-popup" data-tab="edit-profile-popup">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content-inner">
+          <div class="modal-body custom-form-section">
+            <a href="#" title="Close" class="modal-close">
+              <img src="https://web16.anasource.com/team7/Niveshaay/public/images/close.svg" alt="close-btn">
+            </a>
+            <div class="edit-profile-wrapper form-wrapper">
+                        <span class="form-title">Edit Profile</span>
+                        <form id="edit-profile-form" method="POST" action="https://web16.anasource.com/team7/Niveshaay/public/edit/profile" enctype="multipart/form-data"><input type="hidden" name="_token" value="7nbNmAYYN2TyKC7uHNhfYDKgEBJfllxVFzXW55QK">                        <div class="form-outer-wrapper">
+                                <div class="profile-image-wrapper">
+                                    <i class="image-wrapper">
+                                        <img src="https://web16.anasource.com/team7/Niveshaay/public/images/blankuser.jpeg" alt="profile-image">
+                                        <span class="edit-photo form-group">
+                                            <input type="file" name="profile_photo">
+                                            <img src="https://web16.anasource.com/team7/Niveshaay/public/images/camera-icon.svg" alt="camera-icon">
+                                        </span>
+                                    </i>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input id="name" name="name" type="text" class="form-control" placeholder="John Doe" value="swati raiyani">		                    
+                                    <span style="color:red" id="profile-modal-name-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input id="email" name="email" type="email" class="form-control" placeholder="john.dow22@gmail.com" value="swati@gmail.com" readonly="">			
+                                    <span style="color:red" id="profile-modal-email-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input id="phone" name="phone_no" type="text" class="form-control" placeholder="+1 337-550-6798" value="9898945309">			
+                                    <span style="color:red" id="profile-modal-phone-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-green">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-wrapper">
+
+      <section class="inner-page-banner-section">
+
+        <div class="bg-img">
+        </div>
+        <div class="niveshaay-container">
+          <div class="inner-banner-content">
+            <h1> My Profile</h1>
+          </div>
+        </div>
+      </section>
+
+      <div id="content-main-wrap" class="is-clearfix">
+        <section class="profile-section">
+          <div class="niveshaay-container">
+            <div class="profile-info">
+              <div class="profile-info-wrapper">
+                <em class="profile-image">
+                  <img src="https://web16.anasource.com/team7/Niveshaay/public/images/blankuser.jpeg"
+                    alt="profile-image">
+                 
+                </em>
+                <div class="title-wrapper">
+                  <h2>swati raiyani </h2>
+                  <a href="#" class="modal-link" data-link="edit-profile-popup" title="Edit">
+
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 453.8 453.7"
+                      style="enable-background:new 0 0 453.8 453.7;" xml:space="preserve" height="24" width="24">
+                      <style type="text/css">
+                        .st0 {
+                          fill: #83B645;
+                        }
+                      </style>
+                      <path class="st0" d="M401.6,18.3c-24.4-24.4-63.9-24.4-88.3,0l-22.1,22.2L56,275.6l-0.5,0.5c-0.1,0.1-0.1,0.3-0.3,0.3
+                              c-0.3,0.4-0.6,0.7-0.9,1.1c0,0.1-0.1,0.1-0.1,0.3c-0.3,0.4-0.4,0.6-0.6,1c-0.1,0.1-0.1,0.2-0.2,0.4c-0.1,0.4-0.3,0.6-0.4,1
+                              c0,0.1-0.1,0.1-0.1,0.3l-52.2,157c-1.5,4.5-0.4,9.4,3,12.7c2.4,2.3,5.6,3.6,8.9,3.6c1.4,0,2.7-0.2,4-0.6l156.8-52.3
+                              c0.1,0,0.1,0,0.3-0.1c0.4-0.1,0.8-0.3,1.1-0.5c0.1,0,0.2-0.1,0.3-0.1c0.4-0.3,0.9-0.5,1.2-0.8c0.4-0.2,0.8-0.6,1.1-0.9
+                              c0.1-0.1,0.2-0.1,0.2-0.3c0.1-0.1,0.4-0.2,0.5-0.5l257.4-257.4c24.4-24.4,24.4-63.9,0-88.3L401.6,18.3z M169.4,371.4l-86.9-86.9
+                              L300,67l86.9,86.9L169.4,371.4z M70.2,307.6l75.9,75.9l-114,38L70.2,307.6z M417.9,122.8l-13.2,13.4l-86.9-86.9l13.4-13.4
+                              c14.6-14.6,38.3-14.6,52.9,0l34,34C432.5,84.5,432.5,108.2,417.9,122.8z"></path>
+                    </svg>
+                  </a>
+                </div>
+                <ul class="contact-info">
+                  <li>
+                    <a href="mailto:john.doe22@gmail.com" title="Mail Us">swati@gmail.com</a>
+                  </li>
+                  <li>
+                    <a href="tel:+13375506798" title="Call Us">9898945309</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="table-outer-wrapper">
+                <div class="outer-wrap">
+                  <h3>Current Subscriptions</h3>
+                  <div class="table-wrapper">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Product List</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>Amount Paid</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>descritpion</td>
+                          <td>2023-10-01</td>
+                          <td>2023-10-31</td>
+                          <td> INR</td>
+                        </tr>
+                        <tr>
+                          <td>descritpion</td>
+                          <td>2023-10-01</td>
+                          <td>2023-10-31</td>
+                          <td> INR</td>
+                        </tr>
+                        <tr>
+                          <td>descritpion</td>
+                          <td>2023-10-01</td>
+                          <td>2023-10-31</td>
+                          <td> INR</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              <div class="outer-wrap">
+                <h3>Past Subscriptions</h3>
+                <div class="table-wrapper">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Product List</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Amount Paid</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>descritpion</td>
+                        <td>2023-10-01</td>
+                        <td>2023-10-31</td>
+                        <td> INR</td>
+                      </tr>
+                      <tr>
+                        <td>descritpion</td>
+                        <td>2023-10-01</td>
+                        <td>2023-10-31</td>
+                        <td> INR</td>
+                      </tr>
+                      <tr>
+                        <td>descritpion</td>
+                        <td>2023-10-01</td>
+                        <td>2023-10-31</td>
+                        <td> INR</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+               
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="home-video-modal" class="custom-modal home-video-modal" data-tab="home-video-modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content-inner">
+          <div class="video-wrapper modal-body">
+            <a href="#" title="Close" class="modal-close">
+              <img src="images/close.svg" alt="close-btn" />
+            </a>
+            <div class="video-inner-wrapper">
+              <!-- <iframe width="100%" height="225" data-src="https://www.youtube.com/embed/t8LXvzDmoy8" allowfullscreen></iframe> -->
+              <iframe height="225" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-wrap">
+      <div id="footer-wrap" class="is-clearfix">
+        <footer id="footer" class="site-footer">
+          <div id="footer-inner" class="site-footer-inner container">
+            <div class="columns">
+              <div class="column column-1">
+                <div class="footer-logo-block">
+                  <a href="index.html" title="Niveshaay" class="footer-logo"><img src="images/logo-white.png"
+                      alt="Logo" /></a>
+                </div>
+                <div class="footer-content">
+                  <p>
+                    Niveshaay (in Hindi translates to income from investments)
+                    is a SEBI Registered boutique Investment Advisory Firm
+                    with a Dedicated Research Team.
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a href="https://www.niveshaay.com/images/investor-charter.pdf" target="_blank"
+                    title="Invester Charter" class="btn btn-border-green">
+                    <em>
+                      <img src="images/pdf.svg" alt="Pdf icon" />
+                    </em>
+                    Investor Charter
+                  </a>
+                </div>
+              </div>
+              <div class="column column-2">
+                <div class="widget widget-links">
+                  <h3 class="widget-title">Quick links</h3>
+                  <ul class="footer-quick-links">
+                    <li>
+                      <a href="about.html" title="About Us">About Us</a>
+                    </li>
+                    <li>
+                      <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                      <a href="our-strategy.html" title="Our Strategy">Our Strategy</a>
+                    </li>
+                    <li>
+                      <a href="blog.html" title="Blog">Blog</a>
+                    </li>
+                    <li>
+                      <a href="https://niveshaay.smallcase.com/" title="Visit  SmallCase" target="_blank">Visit
+                        SmallCase</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" title="Contact Us">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column column-3">
+                <div class="widget-links links-with-icons">
+                  <h3 class="widget-title">Contact Us</h3>
+                  <ul>
+                    <li>
+                      <a href="https://goo.gl/maps/kvtDT3CSsGG6wPkp8" target="_blank">
+                        508, SNS Platina Nr. Someshwara Enclave,
+                        Vesu, Surat, Gujarat - 395007
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:research@niveshaay.com">research@niveshaay.com</a>
+                    </li>
+                    <li>
+                      <a href="tel:(+91)8200384930">(+91) 8200384930</a>
+                    </li>
+                    <li>
+                      <a href="tel:(+91)7990746384">(+91) 7990746384</a>
+                    </li>
+                  </ul>
+                  <div class="textwidget" style="margin-top: 20px">
+                    <div class="footer-social-links">
+                      <ul>
+                        <li>
+                          <a href="https://www.facebook.com/niveshaay/" target="_blank" title="Facebook">
+                            <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/niveshaay" target="_blank" title="Twitter">
+                            <span class="icon"><i class="fab fa-twitter"></i></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/niveshaay/?hl=en" title="Instagram" target="_blank">
+                            <span class="icon"><i class="fab fa-instagram"></i></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/company/14391848" title="Linkedin" target="_blank">
+                            <span class="icon"><i class="fab fa-linkedin"></i></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/channel/UC8vnjpKi6JhsBLKr6zovAHQ/videos?app=desktop"
+                            target="_blank" title="Youtube">
+                            <span class="icon"><i class="fab fa-youtube"></i></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column column-4">
+                <div class="widget widget-form">
+                  <h3 class="widget-title">Watch Video</h3>
+                  <iframe height="215" src="https://www.youtube.com/embed/t8LXvzDmoy8" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div id="footer-bottom-wrap" class="is-clearfix footer-niveshay-copyright">
+        <div id="footer-bottom" class="site-footer-bottom">
+          <div id="footer-bottom-inner" class="site-footer-bottom-inner">
+            <section class="section footer-bottom-content">
+              <div class="container">
+                <div class="content-wrap">
+                  <span class="footer-copyright"><a href="https://niveshaay.com/">Niveshaay Investment Advisors</a>
+                    © <span class="current-year"></span>. All Rights
+                    Reserved.</span>
+                  <a href="disclosure.html" title="Disclosure" target="_blank" class="disclouser-link">Disclosure</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script defer type="text/javascript" src="js/jquery.min.js"></script>
+  <script defer type="text/javascript" src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script defer type="text/javascript" src="js/select2.min.js"></script>
+  <script defer type="text/javascript" src="js/slick.min.js"></script>
+  <script defer type="text/javascript" src="js/aos.js"></script>
+  <script defer type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script defer type="text/javascript" class="general" src="js/general.js"></script>
+  <script defer src="js/toastr.min.js"></script>
+</body>
+
+</html>

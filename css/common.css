@@ -1,0 +1,186 @@
+.social-media-block .follow-btn {
+    white-space: nowrap;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    height: 46px;
+    line-height: 42px !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #83b645;
+    text-align: center;
+    color: #83b645;
+    background-color: #fff;
+    font-family: 'Public Sans', sans-serif;
+
+}
+
+.list-catagory-section .list-catagory-wrapper .list-wrapper .list-inner-wrapper .list-item-wrapper .list-item .item-content-wrapper span {
+    display: inline-block
+}
+
+.inner-page-banner-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 210px;
+    overflow: hidden;
+}
+
+.inner-page-banner-section .niveshaay-container {
+    width: 100%;
+}
+
+.inner-page-banner-section .bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.inner-page-banner-section .bg-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inner-page-banner-section .bg-img .desktop-img {
+    display: block;
+}
+
+.inner-page-banner-section .bg-img .mobile-img {
+    display: none;
+}
+
+.inner-page-banner-section .inner-banner-content {
+    position: relative;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.inner-page-banner-section .inner-banner-content h1 {
+    text-align: left;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 12px;
+}
+
+.inner-page-banner-section .inner-banner-content p {
+    text-align: left;
+    font-family: 'Public Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.inner-page-banner-section .bottom-shape-wrapper {
+    position: absolute;
+    top: auto;
+    bottom: -10px;
+    left: 0;
+    right: -5px;
+}
+
+.inner-page-banner-section .bottom-shape-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.after-login .inner-page-banner-section .bg-img {
+    background-color: #3F5045;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.list-catagory-section .list-catagory-wrapper .list-wrapper .list-inner-wrapper .list-item-wrapper .list-item .item-content-wrapper .notation-wrapper h2 {
+    line-height: 1.5;
+    font-size: 16px;
+    color: #3b3b3b;
+    font-family: 'Public Sans', sans-serif;
+    transition: all 0.3s;
+}
+
+.niveshaay-header .header-wrapper .navigation-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.custom-form-section .form-wrapper .form-group .form-control:focus {
+    border-width: 1px
+}
+
+.niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul li.btn a {
+    border: 0;
+    background-color: #83b645;
+    color: #fff;
+    white-space: nowrap;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    height: 46px;
+    line-height: 47px !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+
+
+.links-with-icons .textwidget .widget-title {
+    display: none;
+
+}
+
+.site-footer-wrap .footer-niveshay-copyright .footer-bottom-content .content-wrap a:hover{
+	color:#fff
+}
+@media (max-width:1199px) {
+    .inner-page-banner-section .inner-banner-content h1 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    .inner-page-banner-section .inner-banner-content p {
+        max-width: 800px;
+    }
+}
+
+@media (max-width:767px) {
+    .inner-page-banner-section .inner-banner-content {
+        padding: 20px 0;
+    }
+
+    .inner-page-banner-section .inner-banner-content h1 {
+        font-size: 34px;
+    }
+
+    .inner-page-banner-section .inner-banner-content p {
+        font-size: 16px;
+    }
+
+    .inner-page-banner-section .bg-img .desktop-img {
+        display: none;
+    }
+
+    .inner-page-banner-section .bg-img .mobile-img {
+        display: block;
+    }
+
+    .inner-page-banner-section {
+        min-height: 150px;
+        padding: 0 0 11px;
+    }
+}
