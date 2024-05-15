@@ -38,8 +38,9 @@
 .service-listing-section .service-item { margin: 0 0 40px; padding: 40px; }
 .service-listing-section .service-item.has-green-bg { background-color: var(--white1); border-radius: 20px; }
 .service-listing-section .service-item .service-title-block { display: flex; align-items: flex-start; }
-.service-listing-section .service-item .service-title-block .image-block { flex: 0 0 110px; max-width: 110px; }
-.service-listing-section .service-item .service-title-block .service-content { flex: 0 0 calc(100% - 110px); padding-left: 30px; }
+.service-listing-section .service-item .service-title-block .image-block { flex: 0 0 60px; max-width: 60px; }
+.service-listing-section .service-item .service-title-block .image-block img{width: 50px; }
+.service-listing-section .service-item .service-title-block .service-content { flex: 0 0 calc(100% - 60px); padding-left: 20px; }
 .service-listing-section .service-item .service-title-block .service-content h2 { text-align: left; }
 .service-listing-section .service-item .service-title-block .service-content h3 { font-size: 20px; font-weight: 400; margin: 0 0 10px; }
 .service-listing-section ul.green-dot-listing { margin-left: 30px; }
@@ -70,7 +71,6 @@
 @media (max-width:1024px) {
     .service-listing-section ul.green-dot-listing { margin-left: 4px; }
     .service-listing-section { padding: 40px 0; }
-    .service-listing-section .service-item .service-title-block .image-block { flex: 0 0 90px; max-width: 90px; }
     .service-listing-section .service-item .service-title-block .service-content { flex: 0 0 calc(100% - 90px); max-width: calc(100% - 90px); }
 }
 @media(min-width:992px) {

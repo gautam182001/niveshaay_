@@ -16,13 +16,14 @@
     100% { -webkit-transform: scale(0.9, 0.9); transform: scale(0.9, 0.9); opacity: 0; }
 }
 .why-niveshaay-block .left-block .video-wrapper>img { position: absolute; left: 0; top: 0; height: 100%; width: 100%; }
-.why-niveshaay-block .right-block { max-width: 50%; flex: 0 0 50%; padding-top: 60px; }
-.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item { display: flex; flex-wrap: wrap; }
-.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item:not(:last-child) { margin-bottom: 20px; }
-.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .content-block { padding-left: 20px; max-width: calc(100% - 114px); flex: 0 0 calc(100% - 114px); }
+.why-niveshaay-block .right-block { max-width: 50%;padding-top: 60px; flex: 0 0 50%;   }
+.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item { display: flex; flex-wrap: wrap;align-items: center; }
+.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item:not(:last-child) { margin-bottom: 30px; }
+.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .content-block { padding-left: 20px; max-width: calc(100% - 60px); flex: 0 0 calc(100% - 60px); }
 .why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .content-block h3 { font-size: 20px; font-weight: 500; color: var(--black1); }
 .why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .content-block p { color: var(--black1); font-weight: normal; }
-.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .img-blcok { max-width: 114px; flex: 0 0 114px; position: relative; line-height: 0; }
+.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .img-blcok { max-width: 60px; flex: 0 0 60px; position: relative; line-height: 0; }
+.why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .img-blcok img{ width: 50px; }
 .home-video-modal .video-wrapper { box-shadow: 0 0 2px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 5%), 0 4px 10px 0 rgb(0 0 0 / 7%); border-radius: 4px; background-color: var(--black); padding: 0; }
 .home-video-modal.custom-modal .modal-content .modal-body .modal-close { height: 30px; width: 30px; top: -10px; right: -10px; display: flex; align-items: center; justify-content: center; background-color: var(--white); }
 .home-video-modal.custom-modal .modal-content .modal-body .modal-close:hover img { transform: rotate(90deg); }
@@ -34,7 +35,6 @@
 @media (max-width:1024px) {
     .why-niveshaay-block .left-block { padding-right: 40px; }
     .why-niveshaay-block .right-block { padding-top: 50px; }
-    .why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .img-blcok { flex: 0 0 80px; max-width: 80px; }
 }
 @media(max-width:992px) {
     .why-niveshaay-block .left-block { max-width: 100%; flex: 0 0 100%; padding-right: 0; }
