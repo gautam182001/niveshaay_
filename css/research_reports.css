@@ -102,8 +102,8 @@ ol ol>li:before {
 }
 
 .recommendtion-list .item-content-wrap .img-wrap .notification svg {
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
 }
 
 .recommendtion-list .item-content-wrap .img-wrap .notification {
@@ -122,12 +122,13 @@ ol ol>li:before {
     color: var(--white);
     transition: all 0.5s;
     position: absolute;
-    top: -8px;
+    top: -4px;
     right: 0;
-    font-size: 12px;
+    font-size: 10px;
+    padding: 2px;
     border-radius: 50%;
-    height: 18px;
-    width: 18px;
+    height: 15px;
+    width: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
