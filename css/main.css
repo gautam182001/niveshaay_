@@ -29,7 +29,50 @@
 @import "current-recommendation-detail.css";
 @import "our-research-report-v1.css";
 @import "our-research-report-v2.css";
+@import "community-forums.css";
 @import "my-profile.css";
 @import "common.css";
 
-:root{--black:#000000;--black1:#3b3b3b;--black2:#535b62;--black3:#bcbcbc;--black4:#888;--black5:#313131;--black6:#898989;--black7:#303334;--black8:#3F5045;--black9:#b8b8b8;--dark_black:#212529;--dark_black1:#222121;--dark_black2:#363636;--dark_black3:#262626;--white:#ffffff;--white1:#f5f9f1;--white2:#f9fafb;--white3:#e1e1e1;--white4:#F1F1F1;--white5:#CFCFCF;--white6:#E7E7E7;--white7:#F2F2F2;--white8:#D2D2D2;--light-white:#dee2e6;--light-white1:#f9f9f9;--light-white2:#f8f8f8;--light-white3:#f6f6f6;--light-white4:#D8D8D8;--light-white5:#B9B9B9;--light-white6:#fefefe;--green:#83b645;--green1:#6e9939;--blue:#2F75DE;--red:#b5111b;--red1:#ff3860;--yellow:#b26126;--yellow1:#ff9e94;--yellow2:#d2a064;}
+:root {
+    --black: #000000;
+    --black1: #3b3b3b;
+    --black2: #535b62;
+    --black3: #bcbcbc;
+    --black4: #888;
+    --black5: #313131;
+    --black6: #898989;
+    --black7: #303334;
+    --black8: #3F5045;
+    --black9: #b8b8b8;
+    --dark_black: #212529;
+    --dark_black1: #222121;
+    --dark_black2: #363636;
+    --dark_black3: #262626;
+    --dark_black4: #212121;
+    --dark_black5: #58595B;
+    --white: #ffffff;
+    --white1: #f5f9f1;
+    --white2: #f9fafb;
+    --white3: #e1e1e1;
+    --white4: #F1F1F1;
+    --white5: #CFCFCF;
+    --white6: #E7E7E7;
+    --white7: #F2F2F2;
+    --white8: #D2D2D2;
+    --light-white: #dee2e6;
+    --light-white1: #f9f9f9;
+    --light-white2: #f8f8f8;
+    --light-white3: #f6f6f6;
+    --light-white4: #D8D8D8;
+    --light-white5: #B9B9B9;
+    --light-white6: #fefefe;
+    --light-white7: #F0F0F0;
+    --green: #83b645;
+    --green1: #6e9939;
+    --blue: #2F75DE;
+    --red: #b5111b;
+    --red1: #ff3860;
+    --yellow: #b26126;
+    --yellow1: #ff9e94;
+    --yellow2: #d2a064;
+}

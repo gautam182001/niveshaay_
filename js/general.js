@@ -750,7 +750,20 @@ jQuery(document).ready(function () {
       .not($(this).closest(".content-wrap"))
       .removeClass("open_content");
   });
+  /* for comunity anser */
 
+  $(".more-answer").hide();
+  $(".ans-count").click(function () {
+    $(this).closest(".community-wrap").find(".more-answer").slideToggle();
+    $(this).closest(".community-wrap").toggleClass("open");
+    $(".more-answer")
+      .not($(this).closest(".community-wrap").find(".more-answer"))
+      .slideUp();
+    $(".community-wrap")
+      .not($(this).closest(".community-wrap"))
+      .removeClass("open");
+  });
+  /* faq answer */
   $(".answer").hide();
   $(".question").click(function () {
     $(this).closest(".faq-wrap").find(".answer").slideToggle();
@@ -963,7 +976,6 @@ jQuery(function ($) {
   });
 });
 
-
 var e = $(".banner-section"),
   n = window.innerWidth / 4,
   o = window.innerHeight / 4;
@@ -973,5 +985,4 @@ e.mousemove(function (e) {
   $(this)
     .find(".move-image img")
     .css("transform", "translate3d(-" + i + "%, -" + t + "%, 0)");
-})
-
+});
