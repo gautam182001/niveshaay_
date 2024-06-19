@@ -121,6 +121,15 @@
     border-width: 1px
 }
 
+.custom-form-section .form-wrapper .form-group .form-control::placeholder {
+    transition: all 0.3s;
+}
+
+.custom-form-section .form-wrapper .form-group .form-control:focus::placeholder {
+    transition: all 0.3s;
+    color: transparent !important;
+}
+
 .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul li.btn a {
     border: 0;
     background-color: #83b645;
@@ -143,9 +152,10 @@
 
 }
 
-.site-footer-wrap .footer-niveshay-copyright .footer-bottom-content .content-wrap a:hover{
-	color:#fff
+.site-footer-wrap .footer-niveshay-copyright .footer-bottom-content .content-wrap a:hover {
+    color: #fff
 }
+
 @media (max-width:1199px) {
     .inner-page-banner-section .inner-banner-content h1 {
         font-size: 40px;

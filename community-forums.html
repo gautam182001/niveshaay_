@@ -87,7 +87,7 @@
       <div class="modal-content">
         <div class="modal-content-inner">
           <div class="modal-body custom-form-section">
-            <a href="#" title="close" class="modal-close">
+            <a href="#" title="Close" class="modal-close">
               <img src="images/close.svg" alt="close-btn" />
             </a>
             <div class="form-wrapper">
@@ -134,306 +134,336 @@
         </div>
       </div>
     </div>
-    <div class="main-wrapper">
-      <section class="inner-page-banner-section">
-        <div class="bg-img">
-        </div>
-        <div class="niveshaay-container">
-          <div class="inner-banner-content">
-            <h1>Community Forums</h1>
+    <div id="question-modal" class="custom-modal question-modal" data-tab="question-modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content-inner">
+          <div class="modal-body custom-form-section">
+            <a href="#" title="Close" class="modal-close">
+              <img src="images/close.svg" alt="close-btn" />
+            </a>
+            <div class="form-wrapper">
+              <div class="form-inner-wrapper">
+                <p>Please Enter Question</p>
+                <form class="contact-us-form" method="POST" action="https://www.niveshaay.com/front-login">
+                  <div class="form-group">
+                    <textarea id="Message" name="message" class="form-control"
+                      placeholder="Enter your question"></textarea>
+                  </div>
+                  <div class="form-group form-btn-wrapper">
+                    <button type="submit" class="btn btn-green" title="Submit">
+                      Submit
+                    </button>
+                  </div>
+              </div>
+              </form>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <section class="inner-page-banner-section">
+      <div class="bg-img">
+      </div>
+      <div class="niveshaay-container">
+        <div class="inner-banner-content">
+          <h1>Community Forums</h1>
+        </div>
+      </div>
+    </section>
 
-      <div id="content-main-wrap" class="is-clearfix">
-        <div id="content-area" class="site-content-area">
-          <section class="community-section">
+    <div id="content-main-wrap" class="is-clearfix">
+      <div id="content-area" class="site-content-area">
+        <section class="community-section">
 
-            <div class="niveshaay-container">
-              <div class="btn-wrap">
-                <button class="btn btn-green" title="Replay">Replay</button>
-              </div>
-              <div class="community-outer-wrap">
-                <div class="community-list">
-                  <div class="community-wrap">
-                    <div class="top-content">
-                      <div class="img-wrap">
-                        <img src="./images/user.svg">
-                      </div>
-                      <div class="content-wrap">
-                        <div class="heading-txt">
-                          <span class="name">Anonymous User</span>
-                          <span class="date">25th September 2023</span>
-                        </div>
-                        <p class="question">
-                          Why choose Niveshaay?
-                        </p>
-                        <p class="answers "> Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry.
-                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-
-                        <div class="more-answer">
-                          <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially
-                            unchanged. </p>
-
-                          <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                          </p>
-                        </div>
-                      </div>
+          <div class="niveshaay-container">
+            <div class="btn-wrap">
+              <button class="btn btn-green modal-link" title="Ask Your Question" data-link="question-modal">Ask Your
+                Question</button>
+            </div>
+            <div class="community-outer-wrap">
+              <div class="community-list">
+                <div class="community-wrap">
+                  <div class="top-content">
+                    <div class="img-wrap">
+                      <img src="./images/user.svg">
                     </div>
-                    <div class="bottom-content">
-                      <div class="ans-count">
-                        2 <i><img src="./images/down-arrow.svg"> </i>
+                    <div class="content-wrap">
+                      <div class="heading-txt">
+                        <span class="name">Anonymous User</span>
+                        <span class="date">25th September 2023</span>
                       </div>
-                      <div class="input-wrap">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Type question here..." value=""
-                            required="">
-                        </div>
-                        <div class="btn-wrap">
-                          <button class="btn btn-green">Answer</button>
-                        </div>
+                      <p class="question">
+                        Why choose Niveshaay?
+                      </p>
+                      <p class="answers "> Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+
+                      <div class="more-answer">
+                        <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                          unknown
+                          printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                          not only five centuries, but also the leap into electronic typesetting, remaining
+                          essentially
+                          unchanged. </p>
+
+                        <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
                       </div>
                     </div>
                   </div>
-                  <div class="community-wrap">
-                    <div class="top-content">
-                      <div class="img-wrap">
-                        <img src="./images/user.svg">
-                      </div>
-                      <div class="content-wrap">
-                        <div class="heading-txt">
-                          <span class="name">Anonymous User</span>
-                          <span class="date">25th September 2023</span>
-                        </div>
-                        <p class="question">
-                          Why choose Niveshaay?
-                        </p>
-                        <p class="answers "> Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry.
-                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-
-                        <div class="more-answer">
-                          <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially
-                            unchanged. </p>
-
-                          <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                          </p>
-                        </div>
-                      </div>
+                  <div class="bottom-content">
+                    <div class="ans-count">
+                      2 <i><img src="./images/down-arrow.svg"> </i>
                     </div>
-                    <div class="bottom-content">
-                      <div class="ans-count">
-                        2 <i><img src="./images/down-arrow.svg"> </i>
+                    <div class="input-wrap">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Type question here..." value=""
+                          required="">
                       </div>
-                      <div class="input-wrap">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Type question here..." value=""
-                            required="">
-                        </div>
-                        <div class="btn-wrap">
-                          <button class="btn btn-green">Answer</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="community-wrap">
-                    <div class="top-content">
-                      <div class="img-wrap">
-                        <img src="./images/user.svg">
-                      </div>
-                      <div class="content-wrap">
-                        <div class="heading-txt">
-                          <span class="name">Anonymous User</span>
-                          <span class="date">25th September 2023</span>
-                        </div>
-                        <p class="question">
-                          Why choose Niveshaay?
-                        </p>
-                        <p class="answers "> Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry.
-                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-
-                        <div class="more-answer">
-                          <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially
-                            unchanged. </p>
-
-                          <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="bottom-content">
-                      <div class="ans-count">
-                        2 <i><img src="./images/down-arrow.svg"> </i>
-                      </div>
-                      <div class="input-wrap">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Type question here..." value=""
-                            required="">
-                        </div>
-                        <div class="btn-wrap">
-                          <button class="btn btn-green">Answer</button>
-                        </div>
+                      <div class="btn-wrap">
+                        <button class="btn btn-green">Answer</button>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="community-wrap">
+                  <div class="top-content">
+                    <div class="img-wrap">
+                      <img src="./images/user.svg">
+                    </div>
+                    <div class="content-wrap">
+                      <div class="heading-txt">
+                        <span class="name">Anonymous User</span>
+                        <span class="date">25th September 2023</span>
+                      </div>
+                      <p class="question">
+                        Why choose Niveshaay?
+                      </p>
+                      <p class="answers "> Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+
+                      <div class="more-answer">
+                        <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                          unknown
+                          printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                          not only five centuries, but also the leap into electronic typesetting, remaining
+                          essentially
+                          unchanged. </p>
+
+                        <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-content">
+                    <div class="ans-count">
+                      2 <i><img src="./images/down-arrow.svg"> </i>
+                    </div>
+                    <div class="input-wrap">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Type question here..." value=""
+                          required="">
+                      </div>
+                      <div class="btn-wrap">
+                        <button class="btn btn-green">Answer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="community-wrap">
+                  <div class="top-content">
+                    <div class="img-wrap">
+                      <img src="./images/user.svg">
+                    </div>
+                    <div class="content-wrap">
+                      <div class="heading-txt">
+                        <span class="name">Anonymous User</span>
+                        <span class="date">25th September 2023</span>
+                      </div>
+                      <p class="question">
+                        Why choose Niveshaay?
+                      </p>
+                      <p class="answers "> Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+
+                      <div class="more-answer">
+                        <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                          unknown
+                          printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                          not only five centuries, but also the leap into electronic typesetting, remaining
+                          essentially
+                          unchanged. </p>
+
+                        <p class="answers ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-content">
+                    <div class="ans-count">
+                      2 <i><img src="./images/down-arrow.svg"> </i>
+                    </div>
+                    <div class="input-wrap">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Type question here..." value=""
+                          required="">
+                      </div>
+                      <div class="btn-wrap">
+                        <button class="btn btn-green">Answer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer-wrap">
+    <div id="footer-wrap" class="is-clearfix">
+      <footer id="footer" class="site-footer">
+        <div id="footer-inner" class="site-footer-inner container">
+          <div class="columns">
+            <div class="column column-1">
+              <div class="footer-logo-block">
+                <a href="index.html" title="Niveshaay" class="footer-logo"><img src="images/logo-white.png"
+                    alt="Logo" /></a>
+              </div>
+              <div class="footer-content">
+                <p>
+                  Niveshaay (in Hindi translates to income from investments)
+                  is a SEBI Registered boutique Investment Advisory Firm
+                  with a Dedicated Research Team.
+                </p>
+              </div>
+              <div class="btn-wrapper">
+                <a href="https://www.niveshaay.com/images/investor-charter.pdf" target="_blank" title="Invester Charter"
+                  class="btn btn-border-green">
+                  <em>
+                    <img src="images/pdf.svg" alt="Pdf icon" />
+                  </em>
+                  Investor Charter
+                </a>
+              </div>
+            </div>
+            <div class="column column-2">
+              <div class="widget widget-links">
+                <h3 class="widget-title">Quick links</h3>
+                <ul class="footer-quick-links">
+                  <li>
+                    <a href="about.html" title="About Us">About Us</a>
+                  </li>
+                  <li>
+                    <a href="services.html" title="Services">Services</a>
+                  </li>
+                  <li>
+                    <a href="our-strategy.html" title="Our Strategy">Our Strategy</a>
+                  </li>
+                  <li>
+                    <a href="blog.html" title="Blog">Blog</a>
+                  </li>
+                  <li>
+                    <a href="https://niveshaay.smallcase.com/" title="Visit  SmallCase" target="_blank">Visit
+                      SmallCase</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" title="Contact Us">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="column column-3">
+              <div class="widget-links links-with-icons">
+                <h3 class="widget-title">Contact Us</h3>
+                <ul>
+                  <li>
+                    <a href="https://goo.gl/maps/kvtDT3CSsGG6wPkp8" target="_blank">
+                      508, SNS Platina Nr. Someshwara Enclave,
+                      Vesu, Surat, Gujarat - 395007
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:research@niveshaay.com">research@niveshaay.com</a>
+                  </li>
+                  <li>
+                    <a href="tel:(+91)8200384930">(+91) 8200384930</a>
+                  </li>
+                  <li>
+                    <a href="tel:(+91)7990746384">(+91) 7990746384</a>
+                  </li>
+                </ul>
+                <div class="textwidget" style="margin-top: 20px">
+                  <div class="footer-social-links">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/niveshaay/" target="_blank" title="Facebook">
+                          <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/niveshaay" target="_blank" title="Twitter">
+                          <span class="icon"><i class="fab fa-twitter"></i></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/niveshaay/?hl=en" title="Instagram" target="_blank">
+                          <span class="icon"><i class="fab fa-instagram"></i></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/company/14391848" title="Linkedin" target="_blank">
+                          <span class="icon"><i class="fab fa-linkedin"></i></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/channel/UC8vnjpKi6JhsBLKr6zovAHQ/videos?app=desktop"
+                          target="_blank" title="Youtube">
+                          <span class="icon"><i class="fab fa-youtube"></i></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column column-4">
+              <div class="widget widget-form">
+                <h3 class="widget-title">Watch Video</h3>
+                <iframe height="215" src="https://www.youtube.com/embed/t8LXvzDmoy8" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="footer-bottom-wrap" class="is-clearfix footer-niveshay-copyright">
+      <div id="footer-bottom" class="site-footer-bottom">
+        <div id="footer-bottom-inner" class="site-footer-bottom-inner">
+          <section class="section footer-bottom-content">
+            <div class="container">
+              <div class="content-wrap">
+                <span class="footer-copyright"><a href="https://niveshaay.com/">Niveshaay Investment Advisors</a>
+                  © <span class="current-year"></span>. All Rights
+                  Reserved.</span>
+                <a href="disclosure.html" title="Disclosure" target="_blank" class="disclouser-link">Disclosure</a>
               </div>
             </div>
           </section>
         </div>
       </div>
     </div>
-    <div class="site-footer-wrap">
-      <div id="footer-wrap" class="is-clearfix">
-        <footer id="footer" class="site-footer">
-          <div id="footer-inner" class="site-footer-inner container">
-            <div class="columns">
-              <div class="column column-1">
-                <div class="footer-logo-block">
-                  <a href="index.html" title="Niveshaay" class="footer-logo"><img src="images/logo-white.png"
-                      alt="Logo" /></a>
-                </div>
-                <div class="footer-content">
-                  <p>
-                    Niveshaay (in Hindi translates to income from investments)
-                    is a SEBI Registered boutique Investment Advisory Firm
-                    with a Dedicated Research Team.
-                  </p>
-                </div>
-                <div class="btn-wrapper">
-                  <a href="https://www.niveshaay.com/images/investor-charter.pdf" target="_blank"
-                    title="Invester Charter" class="btn btn-border-green">
-                    <em>
-                      <img src="images/pdf.svg" alt="Pdf icon" />
-                    </em>
-                    Investor Charter
-                  </a>
-                </div>
-              </div>
-              <div class="column column-2">
-                <div class="widget widget-links">
-                  <h3 class="widget-title">Quick links</h3>
-                  <ul class="footer-quick-links">
-                    <li>
-                      <a href="about.html" title="About Us">About Us</a>
-                    </li>
-                    <li>
-                      <a href="services.html" title="Services">Services</a>
-                    </li>
-                    <li>
-                      <a href="our-strategy.html" title="Our Strategy">Our Strategy</a>
-                    </li>
-                    <li>
-                      <a href="blog.html" title="Blog">Blog</a>
-                    </li>
-                    <li>
-                      <a href="https://niveshaay.smallcase.com/" title="Visit  SmallCase" target="_blank">Visit
-                        SmallCase</a>
-                    </li>
-                    <li>
-                      <a href="contact.html" title="Contact Us">Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="column column-3">
-                <div class="widget-links links-with-icons">
-                  <h3 class="widget-title">Contact Us</h3>
-                  <ul>
-                    <li>
-                      <a href="https://goo.gl/maps/kvtDT3CSsGG6wPkp8" target="_blank">
-                        508, SNS Platina Nr. Someshwara Enclave,
-                        Vesu, Surat, Gujarat - 395007
-                      </a>
-                    </li>
-                    <li>
-                      <a href="mailto:research@niveshaay.com">research@niveshaay.com</a>
-                    </li>
-                    <li>
-                      <a href="tel:(+91)8200384930">(+91) 8200384930</a>
-                    </li>
-                    <li>
-                      <a href="tel:(+91)7990746384">(+91) 7990746384</a>
-                    </li>
-                  </ul>
-                  <div class="textwidget" style="margin-top: 20px">
-                    <div class="footer-social-links">
-                      <ul>
-                        <li>
-                          <a href="https://www.facebook.com/niveshaay/" target="_blank" title="Facebook">
-                            <span class="icon"><i class="fab fa-facebook-f"></i></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://twitter.com/niveshaay" target="_blank" title="Twitter">
-                            <span class="icon"><i class="fab fa-twitter"></i></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/niveshaay/?hl=en" title="Instagram" target="_blank">
-                            <span class="icon"><i class="fab fa-instagram"></i></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.linkedin.com/company/14391848" title="Linkedin" target="_blank">
-                            <span class="icon"><i class="fab fa-linkedin"></i></span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.youtube.com/channel/UC8vnjpKi6JhsBLKr6zovAHQ/videos?app=desktop"
-                            target="_blank" title="Youtube">
-                            <span class="icon"><i class="fab fa-youtube"></i></span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column column-4">
-                <div class="widget widget-form">
-                  <h3 class="widget-title">Watch Video</h3>
-                  <iframe height="215" src="https://www.youtube.com/embed/t8LXvzDmoy8" allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-      <div id="footer-bottom-wrap" class="is-clearfix footer-niveshay-copyright">
-        <div id="footer-bottom" class="site-footer-bottom">
-          <div id="footer-bottom-inner" class="site-footer-bottom-inner">
-            <section class="section footer-bottom-content">
-              <div class="container">
-                <div class="content-wrap">
-                  <span class="footer-copyright"><a href="https://niveshaay.com/">Niveshaay Investment Advisors</a>
-                    © <span class="current-year"></span>. All Rights
-                    Reserved.</span>
-                  <a href="disclosure.html" title="Disclosure" target="_blank" class="disclouser-link">Disclosure</a>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 
   </div>
   <script defer type="text/javascript" src="js/jquery.min.js"></script>

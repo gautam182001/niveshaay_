@@ -116,6 +116,16 @@
     margin-top: 10px;
     border: 1px solid var(--black9);
     height: 51px;
+    transition: all 0.3s;
+}
+
+.custom-modal .form-wrapper .form-group .form-control::placeholder {
+    transition: all 0.3s;
+}
+
+.custom-modal .form-wrapper .form-group .form-control:focus::placeholder {
+    color: transparent !important;
+    transition: all 0.3s;
 }
 
 .custom-modal .form-inner-wrapper .form-group.has-checkbox {
