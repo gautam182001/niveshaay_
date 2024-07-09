@@ -63,9 +63,6 @@ function equalHeight() {
       ".list-catagory-section.niveshaay-research-block .list-catagory-wrapper .list-wrapper .list-inner-wrapper .list-item-wrapper .list-item .item-content-wrapper .item-inner-content p"
     ).equalHeight();
     jQuery(
-      ".niveshaay-pick-smallcase .smallcase-grid .grid-item .title-block"
-    ).equalHeight();
-    jQuery(
       ".list-catagory-section.niveshaay-research-block.has-left-content .list-catagory-wrapper .list-wrapper .list-inner-wrapper .item-img-wrapper"
     ).equalHeight();
     jQuery(".research-card-section .white-card .card-title").equalHeight();
@@ -147,6 +144,23 @@ function addPadding() {
       ".home-page-banner-section .banner-slider-wrapper .home-banner-slider"
     ).css("min-height", jQuery(window).height() - headerHeight);
     jQuery(".home-page-banner-section").addClass("loaded");
+  }
+}
+
+/* dropdown */
+function dropdown(){
+  if ($(window).width() < 1024) {
+    $(".dropdown-wrap").click(function () {
+  $(".dropdown-wrap .dropdown-content").slideToggle("fast");
+  });
+  $(window).click(function (e) {
+  var container = $(".dropdown-wrap");  
+  var container1 = $(".dropdown-wrap .dropdown-content");
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    container1.slideUp();
+  }
+  });
+  
   }
 }
 
@@ -318,6 +332,7 @@ jQuery(document).ready(function () {
   equalHeight();
   serviceAccordion();
   serviceTabbing();
+  dropdown();
   jQuery("html,body").click(function () {
     if (
       jQuery(
@@ -470,6 +485,38 @@ jQuery(document).ready(function () {
       yearRange: "1960:",
     });
   }
+  /* smallcape content */
+    $(".smallcase-content-wrap .grid-item:first").addClass("open_content");
+    $(".smallcase-content-wrap .heading li:first").addClass("acitve");
+    $(" .smallcase-content-wrap .heading li").hover(function () {
+      $(" .smallcase-content-wrap .heading li").removeClass("active")
+      $(this).addClass("active")
+      var data_tar = $(this).find("a").attr("data-target")  ;
+      $(".grid-item").removeClass("open_content")
+        
+      $(".smallcase-grid .grid-item").each(function () {
+        var data_val= $(this).attr("data-value");
+        if ( data_val  == data_tar ) {
+           $(this).addClass('open_content'); 
+        }
+      });
+    });
+
+
+/* services section scroll on click */
+$(".dropdown-wrap .dropdown-content  li").click(function () { 
+  var sectionlestvalue = $(this).find("a").attr("data-target");
+  var hhight = $(".niveshaay-header").innerHeight();
+  $(".service-list").each(function () {
+    var sectionvalue = $(this).attr("data-value");
+    if (sectionlestvalue == sectionvalue) {
+      var section_offset = $(this).offset().top;
+      var section_scroll = section_offset - hhight ;
+      $("html, body").animate({ scrollTop: section_scroll }, "slow");
+    }
+  });
+});
+
   // // our-research-slider
   // if (jQuery('.niveshaay-research-block .list-inner-wrapper:not(.featured-on)').length) {
   //     jQuery('.niveshaay-research-block .list-inner-wrapper:not(.featured-on)').slick({
@@ -570,37 +617,37 @@ jQuery(document).ready(function () {
   //   });
   // }
   // our-client-slider
-  if (jQuery(".our-team-section .team-slider-wrapper").length) {
-    jQuery(".our-team-section .team-slider-wrapper").slick({
-      arrows: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots: true,
-      autoplay: true,
-      infinite: false,
-      autoplaySpeed: 10000,
-      responsive: [
-        {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 575,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
+  // if (jQuery(".our-team-section .team-slider-wrapper").length) {
+  //   jQuery(".our-team-section .team-slider-wrapper").slick({
+  //     arrows: true,
+  //     slidesToShow: 4,
+  //     slidesToScroll: 1,
+  //     dots: true,
+  //     autoplay: true,
+  //     infinite: false,
+  //     autoplaySpeed: 10000,
+  //     responsive: [
+  //       {
+  //         breakpoint: 1199,
+  //         settings: {
+  //           slidesToShow: 3,
+  //         },
+  //       },
+  //       {
+  //         breakpoint: 991,
+  //         settings: {
+  //           slidesToShow: 2,
+  //         },
+  //       },
+  //       {
+  //         breakpoint: 575,
+  //         settings: {
+  //           slidesToShow: 1,
+  //         },
+  //       },
+  //     ],
+  //   });
+  // }
   if (jQuery(".niveshaay-client .our-clients-slider").length) {
     jQuery(".niveshaay-client .our-clients-slider").on(
       "init",
@@ -849,6 +896,18 @@ jQuery(document).ready(function () {
       container1.slideUp();
     }
   });
+
+  // $(".dropdown-wrap").click(function () {
+  //   $(".dropdown-wrap .dropdown-content").slideToggle();
+  // });
+  // $(window).click(function (e) {
+  //   var container = $(".dropdown-wrap");  
+  //   var container1 = $(".dropdown-wrap .dropdown-content");
+  //   if (!container.is(e.target) && container.has(e.target).length === 0) {
+  //     container1.slideUp();
+  //   }
+  // });
+
   jQuery("#login-modal form").submit(function (e) {
     e.preventDefault();
     jQuery.ajax({
@@ -902,6 +961,7 @@ jQuery(window).on("resize", function () {
   addPadding();
   adj_header();
   adj_footer();
+  // dropdown();
   setTimeout(function () {
     serviceAccordion();
     serviceTabbing();

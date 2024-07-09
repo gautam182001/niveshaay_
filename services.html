@@ -32,7 +32,19 @@
                         <a href="about.html" title="About Us">About Us</a>
                       </li>
                       <li class="active">
-                        <a href="services.html" title="Services">Services</a>
+                        <div class="dropdown-wrap">
+                          <div class="dropdown-heading">
+                            <a href="javascript:void(0)" title="Services">Services</a>
+                          </div>
+                          <span class="down-arrow"> <img src="./images/down-arrow.svg" alt="down-arrow"> </span>
+                           <div class="content-wrap">                           
+                          <ul class="dropdown-content">
+                            <li><a href="#" data-target="research-advisory" title="Research Advisory">Research Advisory</a> </li>
+                            <li><a href="#"  data-target="portfolio-smallcase" title="Portfolio Listed on Smallcase">Portfolio Listed on Smallcase</a> </li>
+                            <li><a href="#" data-target="family-office-consulting" title="Family Office Consulting">Family Office Consulting</a> </li>
+                          </ul>
+                        </div>
+                        </div>
                       </li>
                       <li>
                         <a href="our-strategy.html" title="Research Process">Our Strategy </a>
@@ -144,49 +156,7 @@
         <section class="service-listing-section">
           <div class="niveshaay-container">
             <div class="service-list-wrap">
-              <div class="service-item has-green-bg" id="equity-portfolio-advisory">
-                <div class="service-title-block">
-                  <div class="image-block">
-                    <img src="images/equity-portfolio-advisory-why-niveshay.svg" alt="equity-portfolio-advisory" />
-                  </div>
-                  <div class="service-content">
-                    <h2 class="heading-title niveshaay-section-title">Equity Portfolio Advisory</h2>
-                    <div class="content-block">
-                      <h3>Small & Mid Cap focused portfolio</h3>
-                      <ul class="green-dot-listing">
-                        <li>
-                          Every business starts small and law of large numbers gives this space an opportunity to outperform and have outsized impact on the portfolio.
-                        </li>
-                        <li>
-                          We follow Research based Investing and have devised our own strategy named QQI
-                          <ul>
-                            <li>
-                              <span> Qualitative Strategy:</span>
-                              Understanding the Business Model, Scuttlebutt Approach and Interaction with varied Entrepreneurs
-                            </li>
-                            <li>
-                              <span> Quantitative Strategy:</span>
-                              Subscription to various portals enables us to continuously track emerging data points.
-                            </li>
-                            <li>
-                              <span> Idiosyncratic Factors:</span>
-                              Luck and Patience
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          Volatility, being an inherent nature of small and mid-caps, we prefer a time horizon of 3-5 years for reasonable returns.
-                        </li>
-                      </ul>
-
-                      <p class="has-different-style">
-                        <a href="contact.html" title="Contact Us" class="btn btn-green">Contact Us</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="service-item" id="research-advisory">
+              <div class="service-item service-list " data-value="research-advisory" id="research-advisory">
                 <div class="service-title-block">
                   <div class="image-block">
                     <img src="images/research-advisory-why-niveshay.svg" alt="equity-portfolio-advisory" />
@@ -322,7 +292,7 @@
                   </div>
                 </div>
               </div>
-              <div class="service-item has-green-bg" id="portfolio-smallcase">
+              <div class="service-item has-green-bg service-list" data-value="portfolio-smallcase" id="portfolio-smallcase">
                 <div class="service-title-block">
                   <div class="image-block">
                     <img src="images/small-case-why-niveshay.svg" alt="equity-portfolio-advisory" />
@@ -530,7 +500,7 @@
                   </div>
                 </div>
               </div>
-              <div class="service-item" id="family-office-consulting">
+              <div class="service-item service-list" data-value="family-office-consulting" id="family-office-consulting">
                 <div class="service-title-block">
                   <div class="image-block">
                     <img src="images/family-office-why-niveshay.svg" alt="equity-portfolio-advisory" />
