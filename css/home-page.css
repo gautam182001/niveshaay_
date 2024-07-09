@@ -926,7 +926,6 @@ margin-bottom: -15px;
     justify-content: space-between;
 }
 .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner {
-    transition: all 0.2s linear 0.05s;
     transform: translateY(0);
 }
 
@@ -952,6 +951,15 @@ margin-bottom: -15px;
 
 .niveshaay-pick-smallcase .smallcase-grid .grid-item .title-block .right-content-block p:last-child {
     margin: 0;
+}
+.niveshaay-pick-smallcase .smallcase-grid h4 {
+    display: none; 
+    align-items: center;
+    justify-content: space-between;
+    color: #363636;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 0;
 }
 
 .bg-shape-section {
@@ -1185,6 +1193,11 @@ padding: 0 25px;
     transition: all 0.5s;
 }
 /*media-css*/
+@media(min-width:992px) {
+    .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner {
+        transition: all 0.2s linear 0.05s;
+    }
+}
 @media(max-width:1360px) {
     .slick-arrow.slick-prev {
         left: -7px;
@@ -1408,17 +1421,45 @@ padding: 0 25px;
         flex: 0 0 100%;
         max-width: 100%;
         width: 100%;
+        display: none;
     }
     .smallcase-content-wrap .smallcase-grid{
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 25px;
         width: 100%;
+        display: block;
     }
     .smallcase-content-wrap{
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
+    .niveshaay-pick-smallcase .smallcase-grid .grid-item {
+        border-bottom: 1px solid var(--white3);
+    }
+    .niveshaay-pick-smallcase .smallcase-grid h4 {
+        display: flex;
+        border-bottom: 1px solid var(--white3);
+    }
+    .niveshaay-pick-smallcase .smallcase-grid h4.active {
+        color: #83b645;
+        border-bottom: 0;
+    }
+    .niveshaay-pick-smallcase .smallcase-grid h4.active+.grid-item,
+    .niveshaay-pick-smallcase .smallcase-grid h4.active+.grid-item.open_content {
+        display: block !important;
+    }
+    .smallcase-grid .grid-item.open_content {
+        display: none;
+    }
+
+    .niveshaay-pick-smallcase .smallcase-grid h4.active img {
+        transform: rotate(-180deg);
+        transition: all 0.5s;
+    }
+    .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner { 
+        margin-bottom: 15px;
+    }   
 }
 
 @media(max-width:767px) {
@@ -1486,7 +1527,7 @@ padding: 0 25px;
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0;
-        margin: 0 0 30px;
+        margin: 0;
     }
 
     .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner h3 {
@@ -1540,6 +1581,20 @@ padding: 0 25px;
     .twitter-feeds-section .slick-dots, .list-catagory-section.niveshaay-research-block .slick-dots, .niveshaay-client .slick-dots {
         display: none !important;
     }
+    .niveshaay-pick-smallcase .smallcase-grid .grid-item .title-block .right-content-block .right-inner-content .info-wrap {
+        flex-wrap: wrap;
+    }
+    .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner .info-list {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 -10px;
+    }
+    .niveshaay-pick-smallcase .smallcase-grid .grid-item .title-block .right-content-block .right-inner-content .button-block {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: left;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -1586,9 +1641,7 @@ padding: 0 25px;
         padding: 20px;
     }
 
-    .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner .info-list {
-        flex: 1;
-        max-width: 100%;
+    .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner .info-list { 
         margin: 0 -10px;
         flex-wrap: wrap;
     }

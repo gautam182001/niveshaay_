@@ -62,12 +62,14 @@
     display: flex;
     cursor: pointer;
     align-items: center;
+    flex-direction: column;
+
 }
 .dropdown-wrap  .down-arrow{
     display: none;
 }
 .dropdown-wrap .content-wrap{
-    padding-top: 19px;
+    padding-top: 10px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -90,14 +92,17 @@
     transition: all 0.5s;
 }
 .dropdown-wrap span  img{
-    width: 10px;
-    height: 6px;
+    width: 14px;
     margin-left: 10px;
 }
 .header-wrapper    .dropdown-heading{
     padding: 8px 0;
     color: #3b3b3b;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 .header-wrapper  .dropdown-heading{
     font-size: 18px;
@@ -120,6 +125,13 @@
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
 
+ }
+ .dropdown-heading img{
+    transition: all 0.5s;
+}
+.dropdown-heading.open-menu img{
+     transition: all 0.5s;
+    transform: rotate(-180deg);
  }
  .dropdown-wrap .dropdown-content li:not(:last-child){
     margin-bottom: 3px;
@@ -154,7 +166,7 @@
     .services-tabbing-section .list-catagory-wrapper, .services-tabbing-section .niveshaay-pick-smallcase .smallcase-grid { padding-bottom: 55px; }
     .service-listing-section .list-catagory-section.niveshaay-research-block.has-left-content .list-catagory-wrapper .list-wrapper .list-inner-wrapper .list-item-wrapper { flex: 0 0 33.33%; max-width: 33.33%; }
     .dropdown-wrap .content-wrap{
-        padding-top: 16px;
+        padding-top: 8px;
     }
 }
 @media (max-width:1024px) {
@@ -169,6 +181,32 @@
     }
     .dropdown-wrap .content-wrap{
         padding-top: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .dropdown-wrap .dropdown-content{
+        border-top: 1px solid #83b645;
+        border-radius: 0;
+        box-shadow: none;
+        padding-top: 15px;
+        margin: 15px 0;
+    }
+    .dropdown-wrap .dropdown-content li a{
+        padding:  0 !important;
+    }
+    .header-wrapper .dropdown-heading{
+        padding: 0;
+    }
+    .dropdown-wrap .dropdown-content li a{
+        font-size: 16px;
+    }
+    .dropdown-wrap .dropdown-content li a:hover{
+        background-color: transparent;
+        color:#83b645  !important;
     }
 }
 @media(min-width:992px) {

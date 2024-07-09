@@ -147,23 +147,6 @@ function addPadding() {
   }
 }
 
-/* dropdown */
-function dropdown(){
-  if ($(window).width() < 1024) {
-    $(".dropdown-wrap").click(function () {
-  $(".dropdown-wrap .dropdown-content").slideToggle("fast");
-  });
-  $(window).click(function (e) {
-  var container = $(".dropdown-wrap");  
-  var container1 = $(".dropdown-wrap .dropdown-content");
-  if (!container.is(e.target) && container.has(e.target).length === 0) {
-    container1.slideUp();
-  }
-  });
-  
-  }
-}
-
 // Tab to accordion service page
 var service_flag = true;
 function serviceAccordion() {
@@ -312,6 +295,23 @@ function serviceTabbing() {
 }
 
 jQuery(document).ready(function () {
+  $(function () {
+    $(".grid-item:not(:first-of-type)").css("display", "none");
+    $(".accordion-heading:first-of-type").addClass("active");
+
+    $(".accordion-heading").click(function () {
+      $(".accordion-heading.active")
+        .not(this)
+        .removeClass("active")
+        .next()
+        .hide();
+      $(this).toggleClass("active").next().toggle();
+    });
+    if (screen.width > 992) {
+      $(".grid-item").css("display", "");
+    }
+  });
+
   jQuery(".custom-dropdown").select2({
     placeholder: "Select a State/UnionTerritory",
     // minimumResultsForSearch: Infinity,
@@ -332,7 +332,6 @@ jQuery(document).ready(function () {
   equalHeight();
   serviceAccordion();
   serviceTabbing();
-  dropdown();
   jQuery("html,body").click(function () {
     if (
       jQuery(
@@ -439,6 +438,24 @@ jQuery(document).ready(function () {
         ).addClass("aos-animate");
       });
   }
+  /* dropdown */
+  if ($(window).width() < 1024) {
+    $(".dropdown-heading").click(function () {
+      $(this).closest(".dropdown-wrap").find(".dropdown-content").slideToggle();
+      $(this)
+        .closest(".dropdown-wrap")
+        .find(".dropdown-heading")
+        .toggleClass("open-menu");
+
+      $(".dropdown-content")
+        .not($(this).closest(".dropdown-wrap").find(".dropdown-content"))
+        .slideUp();
+
+      $(".dropdown-heading")
+        .not($(this).closest(".dropdown-wrap").find(".dropdown-heading"))
+        .removeClass("open-menu");
+    });
+  }
   //custom-modal
   jQuery(".modal-link").click(function (e) {
     e.preventDefault();
@@ -486,37 +503,49 @@ jQuery(document).ready(function () {
     });
   }
   /* smallcape content */
-    $(".smallcase-content-wrap .grid-item:first").addClass("open_content");
-    $(".smallcase-content-wrap .heading li:first").addClass("acitve");
-    $(" .smallcase-content-wrap .heading li").hover(function () {
-      $(" .smallcase-content-wrap .heading li").removeClass("active")
-      $(this).addClass("active")
-      var data_tar = $(this).find("a").attr("data-target")  ;
-      $(".grid-item").removeClass("open_content")
-        
-      $(".smallcase-grid .grid-item").each(function () {
-        var data_val= $(this).attr("data-value");
-        if ( data_val  == data_tar ) {
-           $(this).addClass('open_content'); 
-        }
-      });
+  $(".smallcase-content-wrap .grid-item:first").addClass("open_content");
+  $(".smallcase-content-wrap .heading li:first").addClass("acitve");
+  $(" .smallcase-content-wrap .heading li").hover(function () {
+    $(" .smallcase-content-wrap .heading li").removeClass("active");
+    $(this).addClass("active");
+    var data_tar = $(this).find("a").attr("data-target");
+    $(".grid-item").removeClass("open_content");
+
+    $(".smallcase-grid .grid-item").each(function () {
+      var data_val = $(this).attr("data-value");
+      if (data_val == data_tar) {
+        $(this).addClass("open_content");
+      }
     });
-
-
-/* services section scroll on click */
-$(".dropdown-wrap .dropdown-content  li").click(function () { 
-  var sectionlestvalue = $(this).find("a").attr("data-target");
-  var hhight = $(".niveshaay-header").innerHeight();
-  $(".service-list").each(function () {
-    var sectionvalue = $(this).attr("data-value");
-    if (sectionlestvalue == sectionvalue) {
-      var section_offset = $(this).offset().top;
-      var section_scroll = section_offset - hhight ;
-      $("html, body").animate({ scrollTop: section_scroll }, "slow");
-    }
   });
-});
 
+  /* services section scroll on click */
+  $(".dropdown-wrap .dropdown-content  li").click(function (e) {
+    e.preventDefault();
+    var sectionlestvalue = $(this).find("a").attr("data-target");
+    var hhight = $(".niveshaay-header").innerHeight();
+    $(".service-list").each(function () {
+      var sectionvalue = $(this).attr("data-value");
+      if (sectionlestvalue == sectionvalue) {
+        var section_offset = $(this).offset().top;
+        var section_scroll = section_offset - hhight - 20;
+        $("html, body").animate({ scrollTop: section_scroll }, "slow");
+      }
+    });
+  });
+  $(".dropdown-wrap .dropdown-content  li").click(function (e) {
+    e.preventDefault();
+    var sectionlestvalue = $(this).find("a").attr("data-target1");
+    var hhight = $(".niveshaay-header").innerHeight();
+    $(".service-list1").each(function () {
+      var sectionvalue = $(this).attr("data-value1");
+      if (sectionlestvalue == sectionvalue) {
+        var section_offset = $(this).offset().top;
+        var section_scroll = section_offset - hhight - 20;
+        $("html, body").animate({ scrollTop: section_scroll }, "slow");
+      }
+    });
+  });
   // // our-research-slider
   // if (jQuery('.niveshaay-research-block .list-inner-wrapper:not(.featured-on)').length) {
   //     jQuery('.niveshaay-research-block .list-inner-wrapper:not(.featured-on)').slick({
@@ -901,7 +930,7 @@ $(".dropdown-wrap .dropdown-content  li").click(function () {
   //   $(".dropdown-wrap .dropdown-content").slideToggle();
   // });
   // $(window).click(function (e) {
-  //   var container = $(".dropdown-wrap");  
+  //   var container = $(".dropdown-wrap");
   //   var container1 = $(".dropdown-wrap .dropdown-content");
   //   if (!container.is(e.target) && container.has(e.target).length === 0) {
   //     container1.slideUp();
@@ -969,6 +998,10 @@ jQuery(window).on("resize", function () {
   setTimeout(function () {
     equalHeight();
   }, 500);
+
+  if (screen.width > 992) {
+    $(".grid-item").css("display", "");
+  }
 });
 
 // jQuery(document).ready(function () {

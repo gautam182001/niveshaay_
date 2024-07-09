@@ -327,6 +327,7 @@ ol ol>li:before {
 
 .investor-section .blog-type .blog-type-wrap .blog-content .contents a {
     color: var(--black1);
+    line-height: 1.5;
 }
 
 .investor-section .blog-type .blog-type-wrap .blog-content .contents i,
@@ -430,6 +431,7 @@ ol ol>li:before {
     background-color: var(--white1);
     font-size: 15px;
     padding: 20px;
+    line-height: 1.8;
 }
 
 .site-content-area {

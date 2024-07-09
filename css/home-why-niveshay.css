@@ -52,5 +52,6 @@
     .why-niveshaay-block .left-block .video-wrapper { padding-bottom: 50%; }
 }
 @media (max-width:420px) {
-    .why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .content-block { flex: 0 0 100%; max-width: 100%; padding: 0; }
+    .why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .content-block {  padding: 0; }
+    .why-niveshaay-block .why-niveshaay-grid .why-niveshaay-grid-item .img-blcok img{width: 45px;}
 }
