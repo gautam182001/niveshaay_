@@ -442,6 +442,7 @@ jQuery(document).ready(function () {
   if ($(window).width() < 1024) {
     $(".dropdown-wrap>a").click(function () {
       $(this).closest(".dropdown-wrap").find(".sub-menu").slideToggle();
+      $(this).closest(".dropdown-wrap").toggleClass("open-menu");
       $(this)
         .closest(".dropdown-wrap")
         .find(".dropdown-wrap>a")
@@ -450,10 +451,7 @@ jQuery(document).ready(function () {
       $(".sub-menu")
         .not($(this).closest(".dropdown-wrap").find(".sub-menu"))
         .slideUp();
-
-      $(".dropdown-wrap>a")
-        .not($(this).closest(".dropdown-wrap").find(".dropdown-wrap>a"))
-        .removeClass("open-menu");
+      $(this).closest(".dropdown-wrap").siblings().removeClass("open-menu");
     });
   }
   //custom-modal
@@ -535,8 +533,7 @@ jQuery(document).ready(function () {
       });
     });
   }
-  $(".dropdown-wrap .sub-menu  li").click(function (e) {
-    e.preventDefault();
+  $(".dropdown-wrap .sub-menu  li").click(function () {
     var sectionlestvalue = $(this).find("a").attr("data-target1");
     var hhight = $(".niveshaay-header").innerHeight();
     $(".service-list1").each(function () {

@@ -438,11 +438,14 @@ ol ol>li:before {
     position: relative;
 }
 
-.site-content-area .img-wrapper {
+.site-content-area .img-outer-wrapper {
     position: fixed;
     right: 50px;
     bottom: 70px;
     z-index: 2;
+}
+
+.site-content-area .img-wrapper {
     height: 64px;
     width: 64px;
     border-radius: 50%;
@@ -451,6 +454,11 @@ ol ol>li:before {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
+}
+
+.site-content-area .img-wrapper:last-child {
+    margin-bottom: 0;
 }
 
 .site-content-area .img-wrapper img {
