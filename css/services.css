@@ -458,7 +458,7 @@ F .services-tabbing-section ul.green-dot-listing ol {
     white-space: nowrap;
 }
 
-.niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper .bottom-header-wrapper>ul .dropdown-wrap .sub-menu li a {
+.niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper ul:first-child .dropdown-wrap .sub-menu li a {
     padding: 8px 10px !important;
 }
 
@@ -568,7 +568,7 @@ F .services-tabbing-section ul.green-dot-listing ol {
         display: flex
     }
 
-    .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper .bottom-header-wrapper>ul .dropdown-wrap .sub-menu li a {
+    .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper ul:first-child .dropdown-wrap .sub-menu li a {
         padding: 0 !important;
         font-size: 16px;
     }

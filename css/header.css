@@ -917,7 +917,7 @@ p {
     display: flex;
 }
 
-.niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper .bottom-header-wrapper>ul li>a {
+.niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper ul:first-child li>a {
     padding: 28px 0 !important;
     display: block;
 }
