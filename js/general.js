@@ -440,19 +440,19 @@ jQuery(document).ready(function () {
   }
   /* dropdown */
   if ($(window).width() < 1024) {
-    $(".dropdown-heading").click(function () {
-      $(this).closest(".dropdown-wrap").find(".dropdown-content").slideToggle();
+    $(".dropdown-wrap>a").click(function () {
+      $(this).closest(".dropdown-wrap").find(".sub-menu").slideToggle();
       $(this)
         .closest(".dropdown-wrap")
-        .find(".dropdown-heading")
+        .find(".dropdown-wrap>a")
         .toggleClass("open-menu");
 
-      $(".dropdown-content")
-        .not($(this).closest(".dropdown-wrap").find(".dropdown-content"))
+      $(".sub-menu")
+        .not($(this).closest(".dropdown-wrap").find(".sub-menu"))
         .slideUp();
 
-      $(".dropdown-heading")
-        .not($(this).closest(".dropdown-wrap").find(".dropdown-heading"))
+      $(".dropdown-wrap>a")
+        .not($(this).closest(".dropdown-wrap").find(".dropdown-wrap>a"))
         .removeClass("open-menu");
     });
   }
@@ -521,7 +521,7 @@ jQuery(document).ready(function () {
 
   /* services section scroll on click */
   if (jQuery(".service-list").length) {
-    $(".dropdown-wrap .dropdown-content  li").click(function (e) {
+    $(".dropdown-wrap .sub-menu  li").click(function (e) {
       e.preventDefault();
       var sectionlestvalue = $(this).find("a").attr("data-target");
       var hhight = $(".niveshaay-header").innerHeight();
@@ -535,7 +535,7 @@ jQuery(document).ready(function () {
       });
     });
   }
-  $(".dropdown-wrap .dropdown-content  li").click(function (e) {
+  $(".dropdown-wrap .sub-menu  li").click(function (e) {
     e.preventDefault();
     var sectionlestvalue = $(this).find("a").attr("data-target1");
     var hhight = $(".niveshaay-header").innerHeight();
@@ -929,11 +929,11 @@ jQuery(document).ready(function () {
   });
 
   // $(".dropdown-wrap").click(function () {
-  //   $(".dropdown-wrap .dropdown-content").slideToggle();
+  //   $(".dropdown-wrap .sub-menu").slideToggle();
   // });
   // $(window).click(function (e) {
   //   var container = $(".dropdown-wrap");
-  //   var container1 = $(".dropdown-wrap .dropdown-content");
+  //   var container1 = $(".dropdown-wrap .sub-menu");
   //   if (!container.is(e.target) && container.has(e.target).length === 0) {
   //     container1.slideUp();
   //   }
