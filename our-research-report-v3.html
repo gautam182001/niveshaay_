@@ -1,683 +1,552 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js no-svg">
-  <head>
-    <title>Investment Expert | Niveshaay | Surat</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="https://www.niveshaay.com/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-  </head>
 
-  <body class="after-login">
-    <div id="site-wrap" class="site">
-      <div id="header-wrap" class="is-clearfix">
-        <header class="niveshaay-header">
-          <div class="container">
-            <div class="header-wrapper">
-              <div class="logo-wrapper">
-                <a class="site-logo" href="index.html" title="Niveshaay">
-                  <img src="images/logo.png" alt="Site- Logo" />
-                </a>
-              </div>
-              <div class="right-header-wrapper">
-                <div class="navigation-wrapper">
-                  <nav class="bottom-header-wrapper">
-                    <ul>
-                      <li>
-                        <a href="index.html" title="Home">Home</a>
-                      </li>
-                      <li>
-                        <a href="about.html" title="About Us">About Us</a>
-                      </li>
-                      <li>
-                        <a href="services.html" title="Services">Services</a>
-                      </li>
-                      <li>
-                        <a href="our-strategy.html" title="Research Process"
-                          >Our Strategy
-                        </a>
-                      </li>
-                      <li class="active">
-                        <a href="research_reports.html" title="Our Research"
-                          >Our Research</a
-                        >
-                      </li>
-                      <li>
-                        <a href="blog.html" title="Blogs">Blog</a>
-                      </li>
-                      <li>
-                        <a href="contact.html" title="Contact Us">Contact Us</a>
-                      </li>
+<head>
+  <title>Investment Expert | Niveshaay | Surat</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="https://www.niveshaay.com/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
 
-                      <li class="btn login-btn">
-                        <a
-                          href="#"
-                          title="Login/Signup"
-                          data-link="login-modal"
-                          class="modal-link btn btn-green"
-                          >Login/Signup
-                        </a>
-                      </li>
-                      <li class="btn">
-                        <a
-                          href="https://niveshaay.smallcase.com/"
-                          title="Visit Smallcase "
-                          target="_blank"
-                          class="btn btn-green"
-                          >Visit Smallcase
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <div class="profile-block">
-                    <div class="profile-img">
-                      <img src="./images/profile-icon.svg" alt="profile-img" />
-                      <span>Arvind Kothari </span>
-                    </div>
-                    <span>
-                      <img src="./images/down-arrow.svg" alt="down-arrow" />
-                    </span>
-                    <ul class="dropdown-menu">
-                      <li><a href="#" title="My Profile">My Profile</a> </li>
-                    <li><a href="#" title="Change Password">Change Password</a> </li>
-                    <li><a href="#" title="Log Out">Log Out</a> </li>
-                    </ul>
-                  </div>
-                  <div class="hamburger">
-                    <span class="bar1"></span>
-                    <span class="bar2"></span>
-                    <span class="bar3"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
-      <div id="login-modal" class="custom-modal" data-tab="login-modal">
-        <div class="modal-backdrop"></div>
-        <div class="modal-content">
-          <div class="modal-content-inner">
-            <div class="modal-body custom-form-section">
-              <a href="#" title="Close" class="modal-close">
-                <img src="images/close.svg" alt="close-btn" />
+<body class="after-login">
+  <div id="site-wrap" class="site">
+    <div id="header-wrap" class="is-clearfix">
+      <header class="niveshaay-header">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="logo-wrapper">
+              <a class="site-logo" href="index.html" title="Niveshaay">
+                <img src="images/logo.png" alt="Site- Logo" />
               </a>
-              <div class="form-wrapper">
-                <div class="form-inner-wrapper">
-                  <a class="site-logo" href="#" title="Logo">
-                    <img src="images/logo.png" alt="Site- Logo" />
-                  </a>
-                  <p>Log in to Niveshaay</p>
-                  <form
-                    class="contact-us-form"
-                    method="POST"
-                    action="https://www.niveshaay.com/front-login"
-                  >
-                    <input
-                      type="hidden"
-                      name="_token"
-                      value="slEnJpPtl9Mrkc8PDskoR8YVcFnTbDXpdf7A1bZ3"
-                    />
-                    <div class="form-outer-wrapper">
-                      <div class="form-group">
-                        <label for="email_or_phone_no">Email Address</label>
-                        <input
-                          id="email_or_phone_no"
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          placeholder="Enter email"
-                          required
-                        />
-
-                        <span
-                          style="color: red"
-                          id="login-modal-email-error"
-                        ></span>
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Password</label>
-                        <input
-                          id="password"
-                          name="password"
-                          type="password"
-                          class="form-control"
-                          placeholder="**********"
-                          required
-                        />
-
-                        <span style="color: red" id="login-modal-error"></span>
-                      </div>
-                      <div class="form-group has-checkbox">
-                        <span class="password-help"
-                          ><a
-                            href="forgot-password.html"
-                            title="Forgot Password"
-                            >Forgot Password?</a
-                          ></span
-                        >
-                      </div>
-                      <div class="form-group form-btn-wrapper">
-                        <button
-                          type="submit"
-                          class="btn btn-green"
-                          title="Login"
-                        >
-                          Login
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-green signup-link"
-                          data-link="signup-modal"
-                          title="Sign Up"
-                          onclick="location.href = 'signup.html' "
-                        >
-                          Sign Up
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div id="thanks-modal" class="custom-modal" data-tab="thanks-modal">
-        <div class="modal-backdrop"></div>
-        <div class="modal-content">
-          <div class="modal-content-inner">
-            <div class="modal-body custom-form-section">
-              <a href="#" title="Close" class="modal-close">
-                <img src="images/close.svg" alt="close-btn" />
-              </a>
-              <div class="form-wrapper">
-                <div class="form-inner-wrapper">
-                  <i>
-                    <img src="images/thanks.svg" alt="thanks Logo" />
-                  </i>
-                  <h2>Thanks for subscribring!</h2>
-                  <p class="bg-text">
-                    You'll receive our next email in a few days time.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main-wrapper">
-        <section class="inner-page-banner-section">
-          <div class="bg-img"></div>
-          <div class="niveshaay-container">
-            <div class="inner-banner-content">
-              <h1>Investment Adviser Agreement</h1>
-            </div>
-          </div>
-        </section>
-
-        <div id="content-main-wrap" class="is-clearfix">
-          <div id="content-area" class="site-content-area">
-            <section class="profile-detail-section">
-              <div class="niveshaay-container">
-                <div class="profile-detail-block">
-                  <div class="detail-heading">Adviser Details</div>
-                  <div class="custom-col three-col border-bottom">
-                    <div class="col">
-                      <p class="label-info">Name</p>
-                      <p class="info">NIVESHAAY INVESTER ADVISORS</p>
-                    </div>
-                    <div class="col">
-                      <p class="label-info">Email</p>
-                      <p class="info">info@niveshaay.com</p>
-                    </div>
-                    <div class="col">
-                      <p class="label-info">Sebi</p>
-                      <p class="info">INA000017541</p>  
-                    </div>
-                  </div>
-                  <div class="detail-heading">Clients Details</div>
-                  <div class="custom-col three-col border-bottom">
-                    <div class="col">
-                      <p class="label-info">Name</p>
-                      <p class="info">Swati Raiyani</p>
-                    </div>
-                    <div class="col">
-                      <p class="label-info">Email</p>
-                      <p class="info">swati.rayani@tatvamail.com</p>
-                    </div>
-                    <div class="col">
-                      <p class="label-info">Sebi</p>
-                      <p class="info">FQApY78530</p>
-                    </div>
-                  </div>
-                  <div class="detail-heading">Risk Profiling</div>
-                  <div class="custom-col three-col">
-                    <div class="col">
-                      <p class="label-info">Low Risk</p>
-                    </div>
-                    <div class="col">
-                      <p class="label-info">Age</p>
-                      <p class="info">&lt; 30 years</p>
-                    </div>
-                    <div class="col">
-                      <p class="label-info">Sebi Registration</p>
-                      <p class="info">INA000017541</p>
-                    </div>
-                  </div>
-                  <div class="custom-col one-col">
-                    <div class="col">
-                      <p class="label-info">
-                        What is your investment objective? <span>*</span>
-                      </p>
-                      <p class="info checked">
-                        Protect invested capital with very low chance of a loss
-                        (investment horizon - &lt; 2 years)
-                      </p>
-                    </div>
-                  </div>
-                  <div class="custom-col one-col">
-                    <div class="col">
-                      <p class="label-info">
-                        What is your annual income?<span>*</span>
-                      </p>
-                      <p class="info checked">Above 1 Cr</p>
-                    </div>
-                  </div>
-                  <div class="custom-col one-col">
-                    <div class="col">
-                      <p class="label-info">
-                        What percentage of your income goes in repayment of
-                        existing liabilities like bank loans etc?<span>*</span>
-                      </p>
-                      <p class="info checked">20%- 50%</p>
-                    </div>
-                  </div>
-                  <div class="custom-col one-col">
-                    <div class="col">
-                      <p class="label-info">
-                        Pick a possible outcome along with potential capital
-                        drawdown of your investment - Average Return
-                        <span>*</span>
-                      </p>
-                      <p class="info checked">
-                        Avg Return - 10% Best Return - 18 % Worst Return -
-                        (-12%)
-                      </p>
-                    </div>
-                  </div>
-                  <div class="custom-col one-col">
-                    <div class="col">
-                      <p class="label-info">
-                        Percentage of your liquid net worth you would like to
-                        invest? <span>*</span>
-                      </p>
-                      <p class="info checked">&gt; 25%</p>
-                    </div>
-                  </div>
-                  <div class="custom-col one-col">
-                    <div class="col">
-                      <p class="label-info">
-                        Select all the investment you currently hold
-                        <span>*</span>
-                      </p>
-                      <p class="info checked">Stocks</p>
-                    </div>
-                  </div>
-                  <p>
-                    In this, Agreement, unless the context otherwise requires,
-                    the Client and the Investment Adviser shall each be
-                    individually referred to as a “Party” and shall be
-                    collectively referred to as the “Parties”.
-                  </p>
-                  <div class="detail-heading">Whereas:</div>
-                  <ul class="whereas-detils">
+            <div class="right-header-wrapper">
+              <div class="navigation-wrapper">
+                <nav class="bottom-header-wrapper">
+                  <ul class="nav-menu">
                     <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis venenatis lacinia odio a condimentum. Suspendisse
-                      cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
-                      quis ultricies viverra, dapibus at odio. Sed in imperdiet
-                      augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
-                      ultricies egestas massa. Duis malesuada, diam et ornare
-                      hendrerit, metus mauris imperdiet erat, nec aliquam ligula
-                      nisl ut risus. Ut euismod porttitor enim eget euismod.
+                      <a href="index.html" title="Home">Home</a>
                     </li>
                     <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis venenatis lacinia odio a condimentum. Suspendisse
-                      cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
-                      quis ultricies viverra, dapibus at odio. Sed in imperdiet
-                      augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
-                      ultricies egestas massa. Duis malesuada, diam et ornare
-                      hendrerit, metus mauris imperdiet erat, nec aliquam ligula
-                      nisl ut risus. Ut euismod porttitor enim eget euismod.
+                      <a href="about.html" title="About Us">About Us</a>
+                    </li>
+                    <li>
+                      <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                      <a href="our-strategy.html" title="Research Process">Our Strategy
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a href="research_reports.html" title="Our Research">Our Research</a>
+                    </li>
+                    <li>
+                      <a href="blog.html" title="Blogs">Blog</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" title="Contact Us">Contact Us</a>
+                    </li>
+
+                    <li class="btn login-btn">
+                      <a href="#" title="Login/Signup" data-link="login-modal"
+                        class="modal-link btn btn-green">Login/Signup
+                      </a>
+                    </li>
+                    <li class="btn">
+                      <a href="https://niveshaay.smallcase.com/" title="Visit Smallcase " target="_blank"
+                        class="btn btn-green">Visit Smallcase
+                      </a>
                     </li>
                   </ul>
-
-                 <ol class="detail-list">
-                 <li class="detail-heading"> REPRESENTATION AND WARRANTIES BY THE PARTIES
-
-                  <ol>
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis venenatis lacinia odio a condimentum. Suspendisse
-                      cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
-                      quis ultricies viverra, dapibus at odio. Sed in imperdiet
-                      augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
-                      ultricies egestas massa. Duis malesuada, diam et ornare
-                      hendrerit, metus mauris imperdiet erat, nec aliquam ligula
-                      nisl ut risus. Ut euismod porttitor enim eget euismod.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis venenatis lacinia odio a condimentum. Suspendisse
-                      cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
-                      quis ultricies viverra, dapibus at odio. Sed in imperdiet
-                      augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
-                      ultricies egestas massa. Duis malesuada, diam et ornare
-                      hendrerit, metus mauris imperdiet erat, nec aliquam ligula
-                      nisl ut risus. Ut euismod porttitor enim eget euismod.
-                    </li>
-                  </ol>
-                 </li>
-                
-              
-                <li class="detail-heading"> Place of Arbitration
-                  <ol>
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis venenatis lacinia odio a condimentum. Suspendisse
-                      cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
-                      quis ultricies viverra, dapibus at odio. Sed in imperdiet
-                      augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
-                      ultricies egestas massa. Duis malesuada, diam et ornare
-                      hendrerit, metus mauris imperdiet erat, nec aliquam ligula
-                      nisl ut risus. Ut euismod porttitor enim eget euismod.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis venenatis lacinia odio a condimentum. Suspendisse
-                      cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
-                      quis ultricies viverra, dapibus at odio. Sed in imperdiet
-                      augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
-                      ultricies egestas massa. Duis malesuada, diam et ornare
-                      hendrerit, metus mauris imperdiet erat, nec aliquam ligula
-                      nisl ut risus. Ut euismod porttitor enim eget euismod.
-                    </li>
-                  </ol>
-                </li>
-              
-                <li class="detail-heading"> Indemnity Limit
-                  <ol >
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis venenatis lacinia odio a condimentum. Suspendisse
-                      cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
-                      quis ultricies viverra, dapibus at odio. Sed in imperdiet
-                      augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
-                      ultricies egestas massa. Duis malesuada, diam et ornare
-                      hendrerit, metus mauris imperdiet erat, nec aliquam ligula
-                      nisl ut risus. Ut euismod porttitor enim eget euismod.
-                    </li>
-                
-                  </ol>
-                </li>
-               
-              </ol>
+                </nav>
+                <div class="profile-block">
+                  <div class="profile-img">
+                    <img src="./images/profile-icon.svg" alt="profile-img" />
+                    <span>Arvind Kothari </span>
+                  </div>
+                  <span>
+                    <img src="./images/down-arrow.svg" alt="down-arrow" />
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" title="My Profile">My Profile</a> </li>
+                    <li><a href="#" title="Change Password">Change Password</a> </li>
+                    <li><a href="#" title="Log Out">Log Out</a> </li>
+                  </ul>
                 </div>
-              </div>
-            </section>
-            <section class="agreement-section">
-              <div class="niveshaay-container">
-                <h3>Verify the Agreement</h3>
-                <div class="verification-block">
-                  <p>We’ll send you an OTP on this email address.</p>
-                  <div class="custom-form-field">
-                    <input
-                      id="no"
-                      name="no"
-                      type="text"
-                      class="form-control"
-                      placeholder="swati.rayani@tatvamail.com"
-                      value=""
-                      required
-                    />
-                  </div>
-                  <button
-                    data-link="thanks-modal"
-                    class="modal-link btn btn-green"
-                  >
-                    Send OTP
-                  </button>
-                  <p class="suggestion">
-                    *We request you to make payment by the same account holder
-                    as mentioned in the agreement form.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-      <div class="site-footer-wrap">
-        <div id="footer-wrap" class="is-clearfix">
-          <footer id="footer" class="site-footer">
-            <div id="footer-inner" class="site-footer-inner container">
-              <div class="columns">
-                <div class="column column-1">
-                  <div class="footer-logo-block">
-                    <a href="index.html" title="Niveshaay" class="footer-logo"
-                      ><img src="images/logo-white.png" alt="Logo"
-                    /></a>
-                  </div>
-                  <div class="footer-content">
-                    <p>
-                      Niveshaay (in Hindi translates to income from investments)
-                      is a SEBI Registered boutique Investment Advisory Firm
-                      with a Dedicated Research Team.
-                    </p>
-                  </div>
-                  <div class="btn-wrapper">
-                    <a
-                      href="https://www.niveshaay.com/images/investor-charter.pdf"
-                      target="_blank"
-                      title="Invester Charter"
-                      class="btn btn-border-green"
-                    >
-                      <em>
-                        <img src="images/pdf.svg" alt="Pdf icon" />
-                      </em>
-                      Investor Charter
-                    </a>
-                  </div>
-                </div>
-                <div class="column column-2">
-                  <div class="widget widget-links">
-                    <h3 class="widget-title">Quick links</h3>
-                    <ul class="footer-quick-links">
-                      <li>
-                        <a href="about.html" title="About Us">About Us</a>
-                      </li>
-                      <li>
-                        <a href="services.html" title="Services">Services</a>
-                      </li>
-                      <li>
-                        <a href="our-strategy.html" title="Our Strategy"
-                          >Our Strategy</a
-                        >
-                      </li>
-                      <li>
-                        <a href="blog.html" title="Blog">Blog</a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://niveshaay.smallcase.com/"
-                          title="Visit  SmallCase"
-                          target="_blank"
-                          >Visit SmallCase</a
-                        >
-                      </li>
-                      <li>
-                        <a href="contact.html" title="Contact Us">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="column column-3">
-                  <div class="widget-links links-with-icons">
-                    <h3 class="widget-title">Contact Us</h3>
-                    <ul>
-                      <li>
-                        <a
-                          href="https://goo.gl/maps/kvtDT3CSsGG6wPkp8"
-                          target="_blank"
-                        >
-                          508, SNS Platina Nr. Someshwara Enclave, Vesu, Surat,
-                          Gujarat - 395007
-                        </a>
-                      </li>
-                      <li>
-                        <a href="mailto:research@niveshaay.com"
-                          >research@niveshaay.com</a
-                        >
-                      </li>
-                      <li>
-                        <a href="tel:(+91)8200384930">(+91) 8200384930</a>
-                      </li>
-                      <li>
-                        <a href="tel:(+91)7990746384">(+91) 7990746384</a>
-                      </li>
-                    </ul>
-                    <div class="textwidget" style="margin-top: 20px">
-                      <div class="footer-social-links">
-                        <ul>
-                          <li>
-                            <a
-                              href="https://www.facebook.com/niveshaay/"
-                              target="_blank"
-                              title="Facebook"
-                            >
-                              <span class="icon"
-                                ><i class="fab fa-facebook-f"></i
-                              ></span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://twitter.com/niveshaay"
-                              target="_blank"
-                              title="Twitter"
-                            >
-                              <span class="icon"
-                                ><i class="fab fa-twitter"></i
-                              ></span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.instagram.com/niveshaay/?hl=en"
-                              title="Instagram"
-                              target="_blank"
-                            >
-                              <span class="icon"
-                                ><i class="fab fa-instagram"></i
-                              ></span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.linkedin.com/company/14391848"
-                              title="Linkedin"
-                              target="_blank"
-                            >
-                              <span class="icon"
-                                ><i class="fab fa-linkedin"></i
-                              ></span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.youtube.com/channel/UC8vnjpKi6JhsBLKr6zovAHQ/videos?app=desktop"
-                              target="_blank"
-                              title="Youtube"
-                            >
-                              <span class="icon"
-                                ><i class="fab fa-youtube"></i
-                              ></span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column column-4">
-                  <div class="widget widget-form">
-                    <h3 class="widget-title">Watch Video</h3>
-                    <iframe
-                      height="215"
-                      src="https://www.youtube.com/embed/t8LXvzDmoy8"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+                <div class="hamburger">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+                  <span class="bar3"></span>
                 </div>
               </div>
             </div>
-          </footer>
+          </div>
         </div>
-        <div
-          id="footer-bottom-wrap"
-          class="is-clearfix footer-niveshay-copyright"
-        >
-          <div id="footer-bottom" class="site-footer-bottom">
-            <div id="footer-bottom-inner" class="site-footer-bottom-inner">
-              <section class="section footer-bottom-content">
-                <div class="container">
-                  <div class="content-wrap">
-                    <span class="footer-copyright"
-                      ><a href="https://niveshaay.com/"
-                        >Niveshaay Investment Advisors</a
-                      >
-                      © <span class="current-year"></span>. All Rights
-                      Reserved.</span
-                    >
-                    <a
-                      href="disclosure.html"
-                      title="Disclosure"
-                      target="_blank"
-                      class="disclouser-link"
-                      >Disclosure</a
-                    >
+      </header>
+    </div>
+    <div id="login-modal" class="custom-modal" data-tab="login-modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content-inner">
+          <div class="modal-body custom-form-section">
+            <a href="#" title="Close" class="modal-close">
+              <img src="images/close.svg" alt="close-btn" />
+            </a>
+            <div class="form-wrapper">
+              <div class="form-inner-wrapper">
+                <a class="site-logo" href="#" title="Logo">
+                  <img src="images/logo.png" alt="Site- Logo" />
+                </a>
+                <p>Log in to Niveshaay</p>
+                <form class="contact-us-form" method="POST" action="https://www.niveshaay.com/front-login">
+                  <input type="hidden" name="_token" value="slEnJpPtl9Mrkc8PDskoR8YVcFnTbDXpdf7A1bZ3" />
+                  <div class="form-outer-wrapper">
+                    <div class="form-group">
+                      <label for="email_or_phone_no">Email Address</label>
+                      <input id="email_or_phone_no" name="email" type="text" class="form-control"
+                        placeholder="Enter email" required />
+
+                      <span style="color: red" id="login-modal-email-error"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input id="password" name="password" type="password" class="form-control" placeholder="**********"
+                        required />
+
+                      <span style="color: red" id="login-modal-error"></span>
+                    </div>
+                    <div class="form-group has-checkbox">
+                      <span class="password-help"><a href="forgot-password.html" title="Forgot Password">Forgot
+                          Password?</a></span>
+                    </div>
+                    <div class="form-group form-btn-wrapper">
+                      <button type="submit" class="btn btn-green" title="Login">
+                        Login
+                      </button>
+                      <button type="button" class="btn btn-green signup-link" data-link="signup-modal" title="Sign Up"
+                        onclick="location.href = 'signup.html' ">
+                        Sign Up
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </section>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script defer type="text/javascript" src="js/jquery.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="js/jquery-migrate-3.0.1.min.js"
-    ></script>
-    <script
-      defer
-      type="text/javascript"
-      src="js/dataTables.fixedColumns.min.js"
-    ></script>
-    <script defer type="text/javascript" src="js/datatables.min.js"></script>
-    <script defer type="text/javascript" src="js/select2.min.js"></script>
-    <script defer type="text/javascript" src="js/slick.min.js"></script>
-    <script defer type="text/javascript" src="js/jquery.cookie.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      class="general"
-      src="js/general.js"
-    ></script>
-    <script defer src="js/toastr.min.js"></script>
-  </body>
+    <div id="thanks-modal" class="custom-modal" data-tab="thanks-modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-content-inner">
+          <div class="modal-body custom-form-section">
+            <a href="#" title="Close" class="modal-close">
+              <img src="images/close.svg" alt="close-btn" />
+            </a>
+            <div class="form-wrapper">
+              <div class="form-inner-wrapper">
+                <i>
+                  <img src="images/thanks.svg" alt="thanks Logo" />
+                </i>
+                <h2>Thanks for subscribring!</h2>
+                <p class="bg-text">
+                  You'll receive our next email in a few days time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <section class="inner-page-banner-section">
+        <div class="bg-img"></div>
+        <div class="niveshaay-container">
+          <div class="inner-banner-content">
+            <h1>Investment Adviser Agreement</h1>
+          </div>
+        </div>
+      </section>
+
+      <div id="content-main-wrap" class="is-clearfix">
+        <div id="content-area" class="site-content-area">
+          <section class="profile-detail-section">
+            <div class="niveshaay-container">
+              <div class="profile-detail-block">
+                <div class="detail-heading">Adviser Details</div>
+                <div class="custom-col three-col border-bottom">
+                  <div class="col">
+                    <p class="label-info">Name</p>
+                    <p class="info">NIVESHAAY INVESTER ADVISORS</p>
+                  </div>
+                  <div class="col">
+                    <p class="label-info">Email</p>
+                    <p class="info">info@niveshaay.com</p>
+                  </div>
+                  <div class="col">
+                    <p class="label-info">Sebi</p>
+                    <p class="info">INA000017541</p>
+                  </div>
+                </div>
+                <div class="detail-heading">Clients Details</div>
+                <div class="custom-col three-col border-bottom">
+                  <div class="col">
+                    <p class="label-info">Name</p>
+                    <p class="info">Swati Raiyani</p>
+                  </div>
+                  <div class="col">
+                    <p class="label-info">Email</p>
+                    <p class="info">swati.rayani@tatvamail.com</p>
+                  </div>
+                  <div class="col">
+                    <p class="label-info">Sebi</p>
+                    <p class="info">FQApY78530</p>
+                  </div>
+                </div>
+                <div class="detail-heading">Risk Profiling</div>
+                <div class="custom-col three-col">
+                  <div class="col">
+                    <p class="label-info">Low Risk</p>
+                  </div>
+                  <div class="col">
+                    <p class="label-info">Age</p>
+                    <p class="info">&lt; 30 years</p>
+                  </div>
+                  <div class="col">
+                    <p class="label-info">Sebi Registration</p>
+                    <p class="info">INA000017541</p>
+                  </div>
+                </div>
+                <div class="custom-col one-col">
+                  <div class="col">
+                    <p class="label-info">
+                      What is your investment objective? <span>*</span>
+                    </p>
+                    <p class="info checked">
+                      Protect invested capital with very low chance of a loss
+                      (investment horizon - &lt; 2 years)
+                    </p>
+                  </div>
+                </div>
+                <div class="custom-col one-col">
+                  <div class="col">
+                    <p class="label-info">
+                      What is your annual income?<span>*</span>
+                    </p>
+                    <p class="info checked">Above 1 Cr</p>
+                  </div>
+                </div>
+                <div class="custom-col one-col">
+                  <div class="col">
+                    <p class="label-info">
+                      What percentage of your income goes in repayment of
+                      existing liabilities like bank loans etc?<span>*</span>
+                    </p>
+                    <p class="info checked">20%- 50%</p>
+                  </div>
+                </div>
+                <div class="custom-col one-col">
+                  <div class="col">
+                    <p class="label-info">
+                      Pick a possible outcome along with potential capital
+                      drawdown of your investment - Average Return
+                      <span>*</span>
+                    </p>
+                    <p class="info checked">
+                      Avg Return - 10% Best Return - 18 % Worst Return -
+                      (-12%)
+                    </p>
+                  </div>
+                </div>
+                <div class="custom-col one-col">
+                  <div class="col">
+                    <p class="label-info">
+                      Percentage of your liquid net worth you would like to
+                      invest? <span>*</span>
+                    </p>
+                    <p class="info checked">&gt; 25%</p>
+                  </div>
+                </div>
+                <div class="custom-col one-col">
+                  <div class="col">
+                    <p class="label-info">
+                      Select all the investment you currently hold
+                      <span>*</span>
+                    </p>
+                    <p class="info checked">Stocks</p>
+                  </div>
+                </div>
+                <p>
+                  In this, Agreement, unless the context otherwise requires,
+                  the Client and the Investment Adviser shall each be
+                  individually referred to as a “Party” and shall be
+                  collectively referred to as the “Parties”.
+                </p>
+                <div class="detail-heading">Whereas:</div>
+                <ul class="whereas-detils">
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis venenatis lacinia odio a condimentum. Suspendisse
+                    cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
+                    quis ultricies viverra, dapibus at odio. Sed in imperdiet
+                    augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
+                    ultricies egestas massa. Duis malesuada, diam et ornare
+                    hendrerit, metus mauris imperdiet erat, nec aliquam ligula
+                    nisl ut risus. Ut euismod porttitor enim eget euismod.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis venenatis lacinia odio a condimentum. Suspendisse
+                    cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
+                    quis ultricies viverra, dapibus at odio. Sed in imperdiet
+                    augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
+                    ultricies egestas massa. Duis malesuada, diam et ornare
+                    hendrerit, metus mauris imperdiet erat, nec aliquam ligula
+                    nisl ut risus. Ut euismod porttitor enim eget euismod.
+                  </li>
+                </ul>
+
+                <ol class="detail-list">
+                  <li class="detail-heading"> REPRESENTATION AND WARRANTIES BY THE PARTIES
+
+                    <ol>
+                      <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis venenatis lacinia odio a condimentum. Suspendisse
+                        cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
+                        quis ultricies viverra, dapibus at odio. Sed in imperdiet
+                        augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
+                        ultricies egestas massa. Duis malesuada, diam et ornare
+                        hendrerit, metus mauris imperdiet erat, nec aliquam ligula
+                        nisl ut risus. Ut euismod porttitor enim eget euismod.
+                      </li>
+                      <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis venenatis lacinia odio a condimentum. Suspendisse
+                        cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
+                        quis ultricies viverra, dapibus at odio. Sed in imperdiet
+                        augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
+                        ultricies egestas massa. Duis malesuada, diam et ornare
+                        hendrerit, metus mauris imperdiet erat, nec aliquam ligula
+                        nisl ut risus. Ut euismod porttitor enim eget euismod.
+                      </li>
+                    </ol>
+                  </li>
+
+
+                  <li class="detail-heading"> Place of Arbitration
+                    <ol>
+                      <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis venenatis lacinia odio a condimentum. Suspendisse
+                        cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
+                        quis ultricies viverra, dapibus at odio. Sed in imperdiet
+                        augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
+                        ultricies egestas massa. Duis malesuada, diam et ornare
+                        hendrerit, metus mauris imperdiet erat, nec aliquam ligula
+                        nisl ut risus. Ut euismod porttitor enim eget euismod.
+                      </li>
+                      <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis venenatis lacinia odio a condimentum. Suspendisse
+                        cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
+                        quis ultricies viverra, dapibus at odio. Sed in imperdiet
+                        augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
+                        ultricies egestas massa. Duis malesuada, diam et ornare
+                        hendrerit, metus mauris imperdiet erat, nec aliquam ligula
+                        nisl ut risus. Ut euismod porttitor enim eget euismod.
+                      </li>
+                    </ol>
+                  </li>
+
+                  <li class="detail-heading"> Indemnity Limit
+                    <ol>
+                      <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis venenatis lacinia odio a condimentum. Suspendisse
+                        cursus non lacus vel viverra. Vivamus urna ipsum, sagittis
+                        quis ultricies viverra, dapibus at odio. Sed in imperdiet
+                        augue, vel sagittis leo. Donec mi mi, auctor ut magna sed,
+                        ultricies egestas massa. Duis malesuada, diam et ornare
+                        hendrerit, metus mauris imperdiet erat, nec aliquam ligula
+                        nisl ut risus. Ut euismod porttitor enim eget euismod.
+                      </li>
+
+                    </ol>
+                  </li>
+
+                </ol>
+              </div>
+            </div>
+          </section>
+          <section class="agreement-section">
+            <div class="niveshaay-container">
+              <h3>Verify the Agreement</h3>
+              <div class="verification-block">
+                <p>We’ll send you an OTP on this email address.</p>
+                <div class="custom-form-field">
+                  <input id="no" name="no" type="text" class="form-control" placeholder="swati.rayani@tatvamail.com"
+                    value="" required />
+                </div>
+                <button data-link="thanks-modal" class="modal-link btn btn-green">
+                  Send OTP
+                </button>
+                <p class="suggestion">
+                  *We request you to make payment by the same account holder
+                  as mentioned in the agreement form.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-wrap">
+      <div id="footer-wrap" class="is-clearfix">
+        <footer id="footer" class="site-footer">
+          <div id="footer-inner" class="site-footer-inner container">
+            <div class="columns">
+              <div class="column column-1">
+                <div class="footer-logo-block">
+                  <a href="index.html" title="Niveshaay" class="footer-logo"><img src="images/logo-white.png"
+                      alt="Logo" /></a>
+                </div>
+                <div class="footer-content">
+                  <p>
+                    Niveshaay (in Hindi translates to income from investments)
+                    is a SEBI Registered boutique Investment Advisory Firm
+                    with a Dedicated Research Team.
+                  </p>
+                </div>
+                <div class="btn-wrapper">
+                  <a href="https://www.niveshaay.com/images/investor-charter.pdf" target="_blank"
+                    title="Invester Charter" class="btn btn-border-green">
+                    <em>
+                      <img src="images/pdf.svg" alt="Pdf icon" />
+                    </em>
+                    Investor Charter
+                  </a>
+                </div>
+              </div>
+              <div class="column column-2">
+                <div class="widget widget-links">
+                  <h3 class="widget-title">Quick links</h3>
+                  <ul class="footer-quick-links">
+                    <li>
+                      <a href="about.html" title="About Us">About Us</a>
+                    </li>
+                    <li>
+                      <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                      <a href="our-strategy.html" title="Our Strategy">Our Strategy</a>
+                    </li>
+                    <li>
+                      <a href="blog.html" title="Blog">Blog</a>
+                    </li>
+                    <li>
+                      <a href="https://niveshaay.smallcase.com/" title="Visit  SmallCase" target="_blank">Visit
+                        SmallCase</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" title="Contact Us">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column column-3">
+                <div class="widget-links links-with-icons">
+                  <h3 class="widget-title">Contact Us</h3>
+                  <ul>
+                    <li>
+                      <a href="https://goo.gl/maps/kvtDT3CSsGG6wPkp8" target="_blank">
+                        508, SNS Platina Nr. Someshwara Enclave, Vesu, Surat,
+                        Gujarat - 395007
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:research@niveshaay.com">research@niveshaay.com</a>
+                    </li>
+                    <li>
+                      <a href="tel:(+91)8200384930">(+91) 8200384930</a>
+                    </li>
+                    <li>
+                      <a href="tel:(+91)7990746384">(+91) 7990746384</a>
+                    </li>
+                  </ul>
+                  <div class="textwidget" style="margin-top: 20px">
+                    <div class="footer-social-links">
+                      <ul>
+                        <li>
+                          <a href="https://www.facebook.com/niveshaay/" target="_blank" title="Facebook">
+                            <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/niveshaay" target="_blank" title="Twitter">
+                            <span class="icon"><i class="fab fa-twitter"></i></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/niveshaay/?hl=en" title="Instagram" target="_blank">
+                            <span class="icon"><i class="fab fa-instagram"></i></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/company/14391848" title="Linkedin" target="_blank">
+                            <span class="icon"><i class="fab fa-linkedin"></i></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/channel/UC8vnjpKi6JhsBLKr6zovAHQ/videos?app=desktop"
+                            target="_blank" title="Youtube">
+                            <span class="icon"><i class="fab fa-youtube"></i></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column column-4">
+                <div class="widget widget-form">
+                  <h3 class="widget-title">Watch Video</h3>
+                  <iframe height="215" src="https://www.youtube.com/embed/t8LXvzDmoy8" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div id="footer-bottom-wrap" class="is-clearfix footer-niveshay-copyright">
+        <div id="footer-bottom" class="site-footer-bottom">
+          <div id="footer-bottom-inner" class="site-footer-bottom-inner">
+            <section class="section footer-bottom-content">
+              <div class="container">
+                <div class="content-wrap">
+                  <span class="footer-copyright"><a href="https://niveshaay.com/">Niveshaay Investment Advisors</a>
+                    © <span class="current-year"></span>. All Rights
+                    Reserved.</span>
+                  <a href="disclosure.html" title="Disclosure" target="_blank" class="disclouser-link">Disclosure</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script defer type="text/javascript" src="js/jquery.min.js"></script>
+  <script defer type="text/javascript" src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script defer type="text/javascript" src="js/dataTables.fixedColumns.min.js"></script>
+  <script defer type="text/javascript" src="js/datatables.min.js"></script>
+  <script defer type="text/javascript" src="js/select2.min.js"></script>
+  <script defer type="text/javascript" src="js/slick.min.js"></script>
+  <script defer type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script defer type="text/javascript" class="general" src="js/general.js"></script>
+  <script defer src="js/toastr.min.js"></script>
+</body>
+
 </html>
