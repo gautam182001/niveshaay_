@@ -520,19 +520,21 @@ jQuery(document).ready(function () {
   });
 
   /* services section scroll on click */
-  $(".dropdown-wrap .dropdown-content  li").click(function (e) {
-    e.preventDefault();
-    var sectionlestvalue = $(this).find("a").attr("data-target");
-    var hhight = $(".niveshaay-header").innerHeight();
-    $(".service-list").each(function () {
-      var sectionvalue = $(this).attr("data-value");
-      if (sectionlestvalue == sectionvalue) {
-        var section_offset = $(this).offset().top;
-        var section_scroll = section_offset - hhight - 20;
-        $("html, body").animate({ scrollTop: section_scroll }, "slow");
-      }
+  if (jQuery(".service-list").length) {
+    $(".dropdown-wrap .dropdown-content  li").click(function (e) {
+      e.preventDefault();
+      var sectionlestvalue = $(this).find("a").attr("data-target");
+      var hhight = $(".niveshaay-header").innerHeight();
+      $(".service-list").each(function () {
+        var sectionvalue = $(this).attr("data-value");
+        if (sectionlestvalue == sectionvalue) {
+          var section_offset = $(this).offset().top;
+          var section_scroll = section_offset - hhight - 20;
+          $("html, body").animate({ scrollTop: section_scroll }, "slow");
+        }
+      });
     });
-  });
+  }
   $(".dropdown-wrap .dropdown-content  li").click(function (e) {
     e.preventDefault();
     var sectionlestvalue = $(this).find("a").attr("data-target1");

@@ -441,7 +441,7 @@ ol ol>li:before {
 .site-content-area .img-wrapper {
     position: fixed;
     right: 50px;
-    bottom: 60px;
+    bottom: 70px;
     z-index: 2;
     height: 64px;
     width: 64px;
@@ -683,5 +683,9 @@ ol ol>li:before {
 
     .recommendtion-list .item {
         padding: 0;
+    }
+
+    .site-content-area .img-wrapper {
+        bottom: 115px;
     }
 }

@@ -353,13 +353,24 @@ F .services-tabbing-section ul.green-dot-listing ol {
     border-radius: 4px;
     display: none;
     overflow: hidden;
-    border-top: 5px solid #83b645;
+    /* border-top: 5px solid #83b645; */
     transition: all 0.5s;
+}
+
+.dropdown-wrap .dropdown-content::after {
+    content: "";
+    background-color: #83b645;
+    height: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
 }
 
 .dropdown-wrap:hover .dropdown-content {
     display: block;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 
 .dropdown-wrap span img {
@@ -518,6 +529,7 @@ F .services-tabbing-section ul.green-dot-listing ol {
 
     .dropdown-wrap:hover .dropdown-content {
         display: none;
+        transition: all 0.5s;
     }
 
     .dropdown-wrap .dropdown-content {
@@ -531,11 +543,14 @@ F .services-tabbing-section ul.green-dot-listing ol {
     }
 
     .dropdown-wrap .dropdown-content {
-        border-top: 1px solid #83b645;
         border-radius: 0;
         box-shadow: none;
         padding-top: 15px;
         margin: 15px 0;
+    }
+
+    .dropdown-wrap .dropdown-content::after {
+        height: 1px;
     }
 
     .dropdown-wrap .dropdown-content li a {
