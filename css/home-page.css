@@ -811,10 +811,10 @@
     background-color: var(--white)2d1;
     border: 1px solid var(--yellow);
     z-index: 3;
-    left: -5px;
-    bottom: 24px;
+    right: -5px;
+    top: 24px;
     display: block;
-    border-radius: 0 4px 4px 4px;
+    border-radius: 4px 0 4px 4px;
     font-style: normal;
     max-width: 100px;
 }
@@ -824,9 +824,9 @@
     position: absolute;
     width: 5px;
     height: 6px;
-    border-radius: 4px 0 0 0;
+    border-radius: 0 4px 0 0;
     background-color: var(--yellow);
-    left: -1px;
+    right: -1px;
     top: -6px;
     z-index: -1;
     display: block;
@@ -893,7 +893,7 @@
     line-height: 1.4;
     margin: 0 0 4px;
     font-family: 'Public Sans', sans-serif;
-    max-width: calc(60% - 70px);
+    max-width: calc(100% - 100px);
 }
 
 .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner .content-block-inner p {
@@ -980,7 +980,7 @@
     color: #363636;
     cursor: pointer;
     font-size: 18px;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .bg-shape-section {
@@ -1160,15 +1160,15 @@
 
 .smallcase-content-wrap {
     display: flex;
-    margin: 0 -25px;
+    /* margin: 0 -25px; */
     padding-top: 10px;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 
 .smallcase-content-wrap .heading {
     flex: 0 0 40%;
     max-width: 40%;
-    padding: 0 25px;
+    /* padding: 0 25px; */
 }
 
 .smallcase-content-wrap .heading li a {
@@ -1179,14 +1179,15 @@
 
 .smallcase-content-wrap .heading li {
     font-size: 20px;
-    border-bottom: 1px solid var(--white3);
-    padding: 15px 0;
+    /* border-bottom: 1px solid var(--white3); */
+    padding: 15px 30px;
     cursor: pointer;
     transition: all .3s;
+    transition: all 0.5s;
 }
 
 .smallcase-content-wrap .heading li:first-child {
-    padding-top: 0;
+    /* padding-top: 0; */
 }
 
 .smallcase-content-wrap .heading li a {
@@ -1194,13 +1195,29 @@
 }
 
 .smallcase-content-wrap .heading li.active a {
-
-    color: #83b645;
+    /* color: #83b645; */
 }
 
 .smallcase-content-wrap .heading li.active {
-    border-bottom: 1px solid #83b645;
+    /* border-bottom: 1px solid #83b645; */
+    background-color: var(--white);
+    transition: all 0.5s;
+    position: relative;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 5%), 0 4px 10px 0 rgb(0 0 0 / 7%);
 }
+
+.smallcase-content-wrap .heading li.active::after {
+    position: absolute;
+    content: "";
+    background-color: var(--white);
+    height: 100%;
+    width: 20px;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    z-index: 3;
+}
+
 
 .smallcase-content-wrap .heading li.active a img {
     transform: rotate(-90deg);
@@ -1210,14 +1227,14 @@
 .smallcase-content-wrap .heading li a img {
     transition: all 0.5s;
     margin-left: 15px;
-    height: 10px;
+    height: 7px;
     width: 18px;
 }
 
 .smallcase-content-wrap .smallcase-grid {
     flex: 0 0 60%;
     max-width: 60%;
-    padding: 0 25px;
+    /* padding: 0 25px; */
 }
 
 .smallcase-grid .grid-item {
@@ -1479,7 +1496,7 @@
     }
 
     .niveshaay-pick-smallcase .smallcase-grid .grid-item {
-        border-bottom: 1px solid var(--white3);
+        /* border-bottom: 1px solid var(--white3); */
     }
 
     .niveshaay-pick-smallcase .smallcase-grid h4 {
@@ -1490,6 +1507,24 @@
     .niveshaay-pick-smallcase .smallcase-grid h4.active {
         color: #83b645;
         border-bottom: 0;
+        background-color: var(--white);
+        transition: all 0.5s;
+        position: relative;
+        padding: 10px 15px;
+        box-shadow: 0 0 2px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 5%), 0 4px 10px 0 rgb(0 0 0 / 7%);
+    }
+
+    .niveshaay-pick-smallcase .smallcase-grid h4.active::after {
+        position: absolute;
+        content: "";
+        background-color: var(--white);
+        height: 20px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        z-index: 2;
+
     }
 
     .niveshaay-pick-smallcase .smallcase-grid h4.active+.grid-item,
@@ -1605,6 +1640,8 @@
 
     .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner .smallcase-badge {
         bottom: 15px;
+        height: 28px;
+        top: 14px;
     }
 
     .nivesh-shiksha.niveshaay-section-paddding .nivesh-shiksha-content-wrapper {

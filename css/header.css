@@ -1743,7 +1743,6 @@ body.footer-reveal #footer-bottom-wrap, body.footer-reveal #footer-wrap {
     height: 36px;
     width: 36px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 .header-wrapper .profile-block {
@@ -1778,26 +1777,42 @@ body.footer-reveal #footer-bottom-wrap, body.footer-reveal #footer-wrap {
 }
 
 .header-wrapper .profile-block .profile-img span {
-    display: flex;
-    align-items: center;
+    flex: 0 0 calc(100% - 46px);
+    max-width: calc(100% - 46px);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .header-wrapper .profile-block .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
     background-color: #fff;
     right: 0;
-    width: 100%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     margin-top: 22px;
     display: none;
     overflow: hidden;
+    padding-bottom: 8px;
     border-top: 5px solid #83b645;
 }
 
-.header-wrapper .profile-block .dropdown-menu li:not(:last-child) {
+.header-wrapper .profile-block .dropdown-menu .profile-img {
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper .profile-block .dropdown-menu .profile-img img {
+    margin-right: 10px;
+}
+
+.header-wrapper .profile-block .dropdown-menu .profile-img i {
+    height: 36px;
+    width: 36px;
+    margin-right: 10px;
+}
+
+.header-wrapper .profile-block .dropdown-menu li {
     margin-bottom: 3px;
 }
 
@@ -1827,6 +1842,15 @@ body.footer-reveal #footer-bottom-wrap, body.footer-reveal #footer-wrap {
     display: block;
     text-align: start;
     padding: 8px 10px;
+    white-space: nowrap;
+}
+
+.header-wrapper .profile-block .dropdown-menu li:first-child a {
+    border-bottom: 1px solid var(--white3);
+    font-size: 15px;
+    padding: 12px 10px;
+    font-weight: 600;
+    max-width: 200px;
 }
 
 .header-wrapper .profile-block .dropdown-menu li a:hover {
@@ -1898,10 +1922,6 @@ body.footer-reveal #footer-bottom-wrap, body.footer-reveal #footer-wrap {
 
     .header-wrapper .profile-block {
         margin-left: 10px;
-    }
-
-    .header-wrapper .profile-block .profile-img img {
-        margin-right: 8px;
     }
 
     .header-wrapper .profile-block span img {
@@ -2209,7 +2229,6 @@ body.footer-reveal #footer-bottom-wrap, body.footer-reveal #footer-wrap {
     }
 
     .header-wrapper .profile-block .profile-img img {
-        margin-right: 5px;
         height: 30px;
         width: 30px;
     }
