@@ -143,9 +143,11 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 12px !important;
 }
-
+.niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul li.btn:hover{
+    background-color: transparent;
+}
 
 .links-with-icons .textwidget .widget-title {
     display: none;

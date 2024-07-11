@@ -279,6 +279,19 @@ table th {
     color: #fff;
 }
 
+.btn.btn-border {
+    background-color: transparent;
+}
+
+.btn.btn-bg-white {
+    background-color: var(--white);
+    border-color: var(--white);
+}
+
+.btn.btn-bg-white:hover {
+    border-color: var(--green);
+}
+
 ::-moz-selection {
     background-color: #83b645;
     color: #fff
@@ -683,7 +696,7 @@ p {
 }
 
 .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul li+li {
-    margin-left: 42px;
+    margin-left: 30px;
 }
 
 .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul .btn a {
@@ -707,6 +720,16 @@ p {
 .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper ul li:not(.btn) a {
     padding: 8px 0;
     color: #3b3b3b;
+}
+
+.niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper .btn-wrap .btn {
+    color: var(--white);
+    padding: 0 12px !important;
+    margin-top: 0;
+}
+
+.niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper .btn-wrap .btn:hover {
+    color: var(--white);
 }
 
 .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul>li:not(.btn)>a:before {
@@ -889,7 +912,7 @@ p {
 
 .niveshaay-header .header-wrapper .navigation-wrapper .social-icon-wrapper {
     display: flex;
-    margin-left: 10px;
+    margin-left: 19px;
 }
 
 .niveshaay-header .header-wrapper .navigation-wrapper .social-icon-wrapper a span {
@@ -910,7 +933,7 @@ p {
 }
 
 .niveshaay-header .header-wrapper .navigation-wrapper .btn-wrap {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper {
@@ -1829,6 +1852,14 @@ body.footer-reveal #footer-bottom-wrap, body.footer-reveal #footer-wrap {
     .niveshaay-header .header-wrapper .user-dropdown-wrapper, .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul li+li {
         margin-left: 15px;
     }
+
+    .niveshaay-header .header-wrapper .navigation-wrapper .social-icon-wrapper {
+        margin-left: 4px;
+    }
+
+    .niveshaay-header .header-wrapper .navigation-wrapper .btn-wrap {
+        margin-left: 15px;
+    }
 }
 
 @media(max-width:1199px) {
@@ -1947,9 +1978,10 @@ body.footer-reveal #footer-bottom-wrap, body.footer-reveal #footer-wrap {
         padding: 15px 30px 30px;
     }
 
-    .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul {
+    .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper>ul:first-child {
         display: block;
         overflow-y: auto;
+        overflow-x: hidden;
         height: calc(100% - 145px);
     }
 

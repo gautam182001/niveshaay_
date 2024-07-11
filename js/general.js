@@ -300,12 +300,9 @@ jQuery(document).ready(function () {
     $(".accordion-heading:first-of-type").addClass("active");
 
     $(".accordion-heading").click(function () {
-      $(".accordion-heading.active")
-        .not(this)
-        .removeClass("active")
-        .next()
-        .hide();
-      $(this).toggleClass("active").next().toggle();
+      $(".accordion-heading.active").not(this).removeClass("active").next().hide();
+      $(this).next().toggle();
+      $(this).toggleClass('active');
     });
     if (screen.width > 992) {
       $(".grid-item").css("display", "");
