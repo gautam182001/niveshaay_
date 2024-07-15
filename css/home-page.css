@@ -893,7 +893,7 @@
     line-height: 1.4;
     margin: 0 0 4px;
     font-family: 'Public Sans', sans-serif;
-    max-width: calc(100% - 100px);
+    max-width: calc(100% - 100px) !important;
 }
 
 .niveshaay-pick-smallcase .smallcase-grid .grid-item .grid-inner .content-block-inner p {

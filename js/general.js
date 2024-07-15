@@ -70,6 +70,10 @@ function equalHeight() {
       ".research-card-section .white-card .card-content-wrapper"
     ).equalHeight();
 
+    jQuery(".post-card-outer .post-card .post-card-title").equalHeight();
+
+    jQuery(".post-card-outer .post-card .card-content").equalHeight();
+
     // jQuery(
     //   ".recommendtion-table-section .company-logo-list-wrap .company-logo-list .company-logo a"
     // ).equalHeight();
@@ -80,11 +84,11 @@ function equalHeight() {
 }
 
 function adj_header() {
-  var hheight = $(".niveshaay-header").height();
+  var hheight = $(".niveshaay-header").innerHeight();
   $(".main-wrapper").css("padding-top", hheight);
 }
 function adj_footer() {
-  var fheight = $(".site-footer-wrap").height();
+  var fheight = $(".site-footer-wrap").innerHeight();
   $(".main-wrapper").css("padding-bottom", fheight);
   $(".site-footer-wrap").css("margin-top", -fheight);
 }
@@ -300,9 +304,13 @@ jQuery(document).ready(function () {
     $(".accordion-heading:first-of-type").addClass("active");
 
     $(".accordion-heading").click(function () {
-      $(".accordion-heading.active").not(this).removeClass("active").next().hide();
+      $(".accordion-heading.active")
+        .not(this)
+        .removeClass("active")
+        .next()
+        .hide();
       $(this).next().toggle();
-      $(this).toggleClass('active');
+      $(this).toggleClass("active");
     });
     if (screen.width > 992) {
       $(".grid-item").css("display", "");

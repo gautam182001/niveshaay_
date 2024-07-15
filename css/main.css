@@ -32,6 +32,7 @@
 @import "community-forums.css";
 @import "my-profile.css";
 @import "common.css";
+@import "infographic.css";
 
 :root {
     --black: #000000;
