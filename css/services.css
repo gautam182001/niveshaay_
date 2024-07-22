@@ -386,6 +386,7 @@ F .services-tabbing-section ul.green-dot-listing ol {
     justify-content: space-between;
     width: 100%;
     position: relative;
+    margin: 0 11px ;
 }
 
 .header-wrapper .dropdown-wrap>a::after {
@@ -399,7 +400,7 @@ F .services-tabbing-section ul.green-dot-listing ol {
     background-size: contain;
     background-position: center;
     transition: all 0.5s;
-    display: none;
+    /* display: none; */
     top: 50%;
     transform: translateY(-50%);
 }
@@ -477,6 +478,9 @@ F .services-tabbing-section ul.green-dot-listing ol {
 
     .services-tabbing-section .niveshaay-pick-smallcase .slick-dots {
         bottom: 20px;
+    }
+    .header-wrapper .dropdown-wrap>a{
+        margin: 0 10px;
     }
 }
 
