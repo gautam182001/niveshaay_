@@ -33,7 +33,41 @@
 
 .detail-content {
     margin-top: 20px;
+    position: relative;
+    background-color: var(--white);
+    padding:  50px;
 }
+.detail-content::after{
+    right: -5px;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    content: "";
+    position: absolute;
+    top: 15px;
+    z-index: -1;
+    display: block;
+    width: 20px;
+    height: 200px;
+    background: rgba(39, 44, 49, .15);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+.detail-content::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    z-index: -1;
+    display: block;
+    width: 20px;
+    height: 200px;
+    background: rgba(39, 44, 49, .15);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    left: -5px;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
 
 .detail-content p {
     font-size: 16px;

@@ -66,8 +66,8 @@
     background-color: transparent;
 }
 .detail-modal .founder-info-section .founder-info-wrapper .founder-image img{
-object-fit: contain;
-height: auto;
+object-fit: cover;
+object-position: top;
 }
 .our-team-section .team-slider-wrapper .team-member-wrapper .team-member-inner .member-detail h3 { color: var(--green); font-size: 16px; font-weight: 600; }
 .our-team-section .team-slider-wrapper .team-member-wrapper .team-member-inner .member-detail span { color: var(--white2); display: block; font-size: 13px; font-family: 'Public Sans', sans-serif; margin-bottom: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

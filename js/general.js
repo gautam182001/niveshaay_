@@ -599,7 +599,9 @@ jQuery(document).ready(function () {
       ],
     });
   }
-
+$(".social-icons-wrap .social-icons-listing li .social-icon").click(function(event){
+  event.stopPropagation();
+})
   // pick-smallcase-slider
   // if (jQuery('.niveshaay-pick-smallcase .smallcase-grid').length) {
   //     jQuery('.niveshaay-pick-smallcase .smallcase-grid').slick({

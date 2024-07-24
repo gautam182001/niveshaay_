@@ -353,6 +353,7 @@ F .services-tabbing-section ul.green-dot-listing ol {
     border-radius: 4px;
     display: none;
     overflow: hidden;
+    min-width: 170px;
 }
 
 .dropdown-wrap .sub-menu::after {
@@ -460,7 +461,7 @@ F .services-tabbing-section ul.green-dot-listing ol {
 }
 
 .niveshaay-header .header-wrapper .navigation-wrapper .bottom-header-wrapper ul:first-child .dropdown-wrap .sub-menu li a {
-    padding: 8px 10px !important;
+    padding: 8px 15px !important;
 }
 
 .dropdown-wrap .sub-menu li a:hover {
