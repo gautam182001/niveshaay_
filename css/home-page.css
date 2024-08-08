@@ -481,8 +481,11 @@
 
 
 .banner-section{
-    padding: 20px 0;
+    padding: 100px 0;
     background-color: #fff;
+    background-image: url(./../images/banner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 .banner-section .banner-content-wrap{
@@ -498,7 +501,7 @@
 
 }
 .banner-section .banner-content-wrap .left-content h2{
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 400;
     color: var(--black1);
     margin: 0 0 12px;
@@ -514,9 +517,10 @@
     margin-top: 20px;
 }
 .banner-section .banner-content-wrap .left-content .btn-wrap .btn{
-    min-width: 90px;
+    min-width: 140px;
     margin-bottom: 8px;
     text-align: center;
+    font-size: 16px;
 }
 .banner-section .banner-content-wrap .right-content{
     flex: 0 0 50%;
@@ -524,12 +528,12 @@
     padding: 0 20px;
 }
 .banner-section .banner-content-wrap .right-content .outer-wrap{
-    background: linear-gradient(145.77deg, rgba(150, 221, 204, 0.7) 0.87%, rgba(217, 208, 252, 0.3) 100%);
+    /* background: linear-gradient(145.77deg, rgba(150, 221, 204, 0.7) 0.87%, rgba(217, 208, 252, 0.3) 100%); */
     border-radius: 24px;
-    max-width: 450px;
+    max-width: 500px;
     min-height: 450px;
     display: flex;
-    padding: 80px 25px;
+    padding: 0px 25px;
     margin-left: auto;
 }
 .banner-section .banner-content-wrap .right-content .outer-wrap  .button-box-wrap{
@@ -543,9 +547,13 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 38px;
-    padding: 14px;
+    padding: 20px;
     border-radius: 14px;
-    min-width: 260px;
+    min-width: 240px;
+background: #FFFFFF;
+box-shadow: 6px 6px 10px rgba(131, 182, 69, 0.15);
+border-radius: 15px;
+
 }
 .banner-section .banner-content-wrap .right-content .outer-wrap  .button-box-wrap .button-box:last-child{
     margin-bottom: 0;
@@ -557,7 +565,7 @@
     }
     
 .banner-section .banner-content-wrap .right-content .outer-wrap  .button-box-wrap .button-box:nth-child(odd){
-    margin-left: 140px;
+    margin-left: 160px;
     animation: rightInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -567,12 +575,12 @@
         margin-left: 200px;
     }
     100%{
-        margin-left: 140px;
+        margin-left: 160px;
     }
 }
 @keyframes rightInAnimation{
     0%{
-        margin-left: -200px;
+        margin-left: -80px;
     }
     100%{
         margin-left: 0px;
@@ -583,6 +591,12 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
+}
+.banner-section .banner-content-wrap .right-content .outer-wrap  .button-box-wrap .button-box h4{
+    color: var(--black1);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;   
 }
 .banner-section .banner-content-wrap .right-content .outer-wrap  .button-box-wrap .button-box p{
     color: var(--black1);
@@ -1690,6 +1704,7 @@
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 30px;
+        text-align: center;
     }
     .banner-section .banner-content-wrap .right-content{
         flex: 0 0 100%;
@@ -1705,8 +1720,11 @@
         margin-left: 90px;
     }
     .banner-section .banner-content-wrap .right-content .outer-wrap{
-        padding: 50px 25px;
+        padding: 20px 0px;
+        max-width: unset;
+        min-height: unset;
     }
+    
     @keyframes leftInAnimation{
         0%{
             margin-left: 200px;
@@ -1714,6 +1732,20 @@
         100%{
             margin-left: 120px;
         }
+    }
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: -15px !important;
+        align-items: unset;
+    }
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box{
+        flex: 0 0 calc(50% - 30px) ;
+        max-width: calc(50% - 30px);
+        margin: 15px !important;
+    }
+    .banner-section{
+        padding: 50px 0;
     }
 }
 
@@ -1861,6 +1893,25 @@
     .banner-section .banner-content-wrap .left-content p{
         font-size: 16px;
     }
+    /* .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box{
+        flex: 0 0 calc(100% - 30px);
+        max-width: calc(100% - 30px);
+        margin: 15px !important;
+    } */
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box h4{
+        font-size: 16px;
+    }
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap{
+        margin: -8px !important;
+    }
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box{
+        margin: 8px !important;
+    }
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box{
+        flex: 0 0 calc(50% - 16px) ;
+        max-width: calc(50% - 16px);
+    }
+    
 }
 
 @media screen and (max-width:575px) {
@@ -1912,14 +1963,14 @@
         flex-wrap: wrap;
     }
     .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box{
-        min-width: 230px;
+        min-width: unset;
         padding-right: 25px;
     }
     .banner-section .banner-content-wrap .right-content .outer-wrap  .button-box-wrap .button-box:nth-child(odd){
         margin-left: 50px;
     }
     .banner-section .banner-content-wrap .right-content .outer-wrap{
-        padding: 50px 20px;
+        padding:  0px;
     }
     @keyframes leftInAnimation{
         0%{
@@ -1928,6 +1979,25 @@
         100%{
             margin-left: 50px;
         }
+    }
+    .banner-section{
+        padding: 30px 0;
+    }
+     /* .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box{
+        flex: 0 0 calc(100% - 30px);
+        max-width: calc(100% - 30px);
+        margin: 8px !important;
+    } */
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box .inner-block{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box .inner-block .content-block{
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    .banner-section .banner-content-wrap .right-content .outer-wrap .button-box-wrap .button-box{
+        justify-content: center;
     }
 }
 
