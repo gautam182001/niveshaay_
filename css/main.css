@@ -34,6 +34,7 @@
 @import "common.css";
 @import "info-graphic.css";
 @import "info-graphic-details.css";
+@import "hedgehogs-fund-category.css";
 
 :root {
     --black: #000000;
