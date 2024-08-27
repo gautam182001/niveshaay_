@@ -231,9 +231,9 @@
   right: 20px;
 }
 
-.faq-section.alternative .faq-wrap {
+/* .faq-section.alternative .faq-wrap {
   margin-bottom: 0;
-}
+} */
 
 .faq-section.alternative .faq-wrap .answer, .faq-section.alternative .faq-wrap .question {
   background-color: #ffffff;
@@ -241,6 +241,14 @@
 
 .faq-section.alternative .faq-wrap:nth-child(2n) .answer, .faq-section.alternative .faq-wrap:nth-child(2n) .question {
   background-color: #f5f9f1;
+}
+
+.faq-section.alternative {
+  margin-bottom: 0px;
+}
+
+.faq-section.alternative .faq-wrap {
+  margin-bottom: 0;
 }
 
 @media (max-width: 1199px) {
@@ -252,6 +260,27 @@
   .niveshaay-fund-section .details-list p {
     flex: 0 0 70%;
     max-width: 70%;
+  }
+}
+
+@media (max-width:1024px) {
+  .hedgehogs-fund-category .page-title {
+    font-weight: 600;
+    padding-top: 30px;
+  }
+
+  .fund-section, .key-facts-section {
+    padding: 30px 0;
+  }
+
+  .faq-section.alternative {
+    padding: 30px 0;
+    ;
+  }
+
+  .fund-section .card {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
   }
 }
 
@@ -279,6 +308,11 @@
     flex: 0 0 60%;
     max-width: 60%;
   }
+
+  .fund-section .card h3 {
+    font-size: 20px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -312,6 +346,45 @@
     top: 6.5px;
     transform: none;
   }
+
+  .hedgehogs-fund-category .page-title {
+    font-size: 28px;
+  }
+
+  .faq-section.alternative .faq-wrap .question {
+    padding: 10px;
+
+  }
+
+  .faq-section.alternative .faq-wrap .question::after {
+    top: 20px;
+  }
+
+  .key-facts-section .table-wrap table thead td {
+    font-size: 20px;
+  }
+
+  .key-facts-section .table-wrap table td {
+    font-size: 16px;
+  }
+
+  .fund-section .card .inner-card {
+    padding: 15px;
+  }
+
+  .fund-section .card h3 {
+    font-size: 18px;
+  }
+
+
+}
+
+@media (max-width:640px) {
+  .fund-section .card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -327,6 +400,16 @@
   .niveshaay-fund-section .details-list span::after {
     display: none;
   }
+
+  .key-facts-section .bottom-wrap .btn-wrap {
+    flex-wrap: wrap;
+  }
+
+  .key-facts-section .bottom-wrap .btn {
+    margin-right: 0;
+  }
+
+
 }
 
 @media (max-width: 490px) {
@@ -349,6 +432,11 @@
   .key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner .fact-content {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .fund-section .card {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
