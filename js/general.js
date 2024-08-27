@@ -73,7 +73,8 @@ function equalHeight() {
     jQuery(".post-card-outer .post-card .post-card-title").equalHeight();
 
     jQuery(".post-card-outer .post-card .card-content").equalHeight();
-
+    // jQuery(".fund-section .card .inner-card .content-wrap h3").equalHeight();
+    // jQuery(".fund-section .card .inner-card .content-wrap p").equalHeight();
     // jQuery(
     //   ".recommendtion-table-section .company-logo-list-wrap .company-logo-list .company-logo a"
     // ).equalHeight();
@@ -599,9 +600,11 @@ jQuery(document).ready(function () {
       ],
     });
   }
-$(".social-icons-wrap .social-icons-listing li .social-icon").click(function(event){
-  event.stopPropagation();
-})
+  $(".social-icons-wrap .social-icons-listing li .social-icon").click(function (
+    event
+  ) {
+    event.stopPropagation();
+  });
   // pick-smallcase-slider
   // if (jQuery('.niveshaay-pick-smallcase .smallcase-grid').length) {
   //     jQuery('.niveshaay-pick-smallcase .smallcase-grid').slick({

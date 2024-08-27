@@ -1,3 +1,10 @@
+.hedgehogs-fund-category .page-title {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 40px;
+}
+
 .hedgehogs-fund-category .inner-page-banner-section .inner-banner-content h1 {
   color: var(--black1);
   font-size: 46px;
@@ -5,6 +12,7 @@
   text-align: center;
   margin: 0 auto;
 }
+
 .key-fact-section {
   padding: 25px 0;
 }
@@ -39,11 +47,7 @@
   padding: 15px;
 }
 
-.key-fact-section
-  .key-fact-outer-wrap
-  .key-fact-inner-wrap
-  .facts-wrap
-  .fact-inner {
+.key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner {
   padding: 20px;
   border: 1px solid var(--white8);
   height: 100%;
@@ -55,43 +59,24 @@
   box-shadow: 2px 2px 10px 1px rgba(210, 210, 210, 0.3);
 }
 
-.key-fact-section
-  .key-fact-outer-wrap
-  .key-fact-inner-wrap
-  .facts-wrap
-  .fact-inner:hover {
+.key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner:hover {
   color: var(--white);
   background-color: var(--green);
   transition: all 0.5s;
 }
 
-.key-fact-section
-  .key-fact-outer-wrap
-  .key-fact-inner-wrap
-  .facts-wrap
-  .fact-inner:hover
-  .fact-content {
+.key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner:hover .fact-content {
   color: var(--white);
   transition: all 0.5s;
 }
 
-.key-fact-section
-  .key-fact-outer-wrap
-  .key-fact-inner-wrap
-  .facts-wrap
-  .fact-inner
-  h5 {
+.key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner h5 {
   font-size: 16px;
   margin-bottom: 5px;
   max-width: 130px;
 }
 
-.key-fact-section
-  .key-fact-outer-wrap
-  .key-fact-inner-wrap
-  .facts-wrap
-  .fact-inner
-  .fact-content {
+.key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner .fact-content {
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;
@@ -102,9 +87,11 @@
 .niveshaay-fund-section {
   padding: 25px 0 50px;
 }
+
 .niveshaay-fund-section .details-list {
   margin-bottom: -10px;
 }
+
 .niveshaay-fund-section .details-list .list-item {
   padding: 20px 0;
   border-bottom: 1px solid var(--white3);
@@ -115,6 +102,7 @@
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
+
 .niveshaay-fund-section .details-list span {
   font-size: 20px;
   flex: 0 0 24%;
@@ -122,6 +110,7 @@
   padding-right: 42px;
   position: relative;
 }
+
 .niveshaay-fund-section .details-list span::after {
   content: "";
   display: block;
@@ -143,11 +132,123 @@
   font-weight: 500;
 }
 
+.fund-section,
+.key-facts-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.fund-section .card-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -15px -30px;
+  padding: 10px 0;
+}
+
+.fund-section .card {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.fund-section .card .inner-card {
+  padding: 25px;
+  height: 100%;
+}
+
+.fund-section .card:nth-child(2n) .inner-card {
+  background-color: #f5f9f1;
+  ;
+}
+
+.fund-section .card h3 {
+  font-size: 24px;
+}
+
+.key-facts-section .table-wrap {
+  margin-bottom: 30px;
+}
+
+.key-facts-section .table-wrap table {
+  border: 1px solid #83b645;
+
+}
+
+.key-facts-section .table-wrap table td {
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.key-facts-section .table-wrap table tbody tr:nth-child(2n+1) {
+  background-color: #f5f9f1;
+
+}
+
+.key-facts-section .table-wrap table thead td {
+  font-size: 22px;
+}
+
+.key-facts-section .table-wrap table thead {
+  border-bottom: 1px solid #83b645;
+  font-size: 22px;
+  color: #83b645;
+
+}
+
+.key-facts-section .table-wrap table tbody tr td:first-child {
+  width: 37%;
+}
+
+.key-facts-section .bottom-wrap .btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-facts-section .bottom-wrap .btn {
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 10px;
+
+}
+
+.key-facts-section .bottom-wrap .btn {
+  margin-right: 10px;
+}
+
+.key-facts-section .bottom-wrap .btn:last-child {
+  margin-right: 0;
+}
+
+.faq-section.alternative .faq-wrap .question {
+  padding: 20px;
+}
+
+.faq-section.alternative .faq-wrap .question::after {
+  top: 30px;
+  right: 20px;
+}
+
+.faq-section.alternative .faq-wrap {
+  margin-bottom: 0;
+}
+
+.faq-section.alternative .faq-wrap .answer, .faq-section.alternative .faq-wrap .question {
+  background-color: #ffffff;
+}
+
+.faq-section.alternative .faq-wrap:nth-child(2n) .answer, .faq-section.alternative .faq-wrap:nth-child(2n) .question {
+  background-color: #f5f9f1;
+}
+
 @media (max-width: 1199px) {
   .niveshaay-fund-section .details-list span {
     flex: 0 0 30%;
     max-width: 30%;
   }
+
   .niveshaay-fund-section .details-list p {
     flex: 0 0 70%;
     max-width: 70%;
@@ -159,17 +260,21 @@
     flex: 0 0 33.33%;
     max-width: 33.33%;
   }
-  .niveshaay-fund-section .details-list{
+
+  .niveshaay-fund-section .details-list {
     margin-bottom: -5px;
   }
-  .niveshaay-fund-section .details-list .list-item{
+
+  .niveshaay-fund-section .details-list .list-item {
     padding: 15px 0;
     margin-bottom: 5px;
   }
+
   .niveshaay-fund-section .details-list span {
     flex: 0 0 40%;
     max-width: 40%;
   }
+
   .niveshaay-fund-section .details-list p {
     flex: 0 0 60%;
     max-width: 60%;
@@ -177,27 +282,32 @@
 }
 
 @media (max-width: 767px) {
-  .hedgehogs-fund-category .inner-page-banner-section .inner-banner-content h1{
+  .hedgehogs-fund-category .inner-page-banner-section .inner-banner-content h1 {
     font-size: 34px;
     max-width: 460px;
   }
+
   .key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap {
     flex: 0 0 50%;
     max-width: 50%;
   }
-  .niveshaay-fund-section .details-list .list-item{
+
+  .niveshaay-fund-section .details-list .list-item {
     padding: 10px 0;
   }
+
   .niveshaay-fund-section .details-list p {
     flex: 0 0 100%;
     max-width: 100%;
     padding-left: 0;
   }
+
   .niveshaay-fund-section .details-list span {
     flex: 0 0 auto;
     max-width: calc(100% - 42px);
   }
-  .niveshaay-fund-section .details-list span::after{
+
+  .niveshaay-fund-section .details-list span::after {
     right: 8.5px;
     top: 6.5px;
     transform: none;
@@ -205,24 +315,22 @@
 }
 
 @media (max-width: 575px) {
-  .niveshaay-fund-section .details-list span{
+  .niveshaay-fund-section .details-list span {
     font-size: 18px;
   }
-  .niveshaay-fund-section .details-list p{
+
+  .niveshaay-fund-section .details-list p {
     font-size: 14px;
     line-height: 22px
   }
-  .niveshaay-fund-section .details-list span::after{
+
+  .niveshaay-fund-section .details-list span::after {
     display: none;
   }
 }
 
 @media (max-width: 490px) {
-  .key-fact-section
-    .key-fact-outer-wrap
-    .key-fact-inner-wrap
-    .facts-wrap
-    .fact-inner {
+  .key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner {
     padding: 15px;
   }
 
@@ -234,21 +342,11 @@
     margin: -10px;
   }
 
-  .key-fact-section
-    .key-fact-outer-wrap
-    .key-fact-inner-wrap
-    .facts-wrap
-    .fact-inner
-    h5 {
+  .key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner h5 {
     font-size: 14px;
   }
 
-  .key-fact-section
-    .key-fact-outer-wrap
-    .key-fact-inner-wrap
-    .facts-wrap
-    .fact-inner
-    .fact-content {
+  .key-fact-section .key-fact-outer-wrap .key-fact-inner-wrap .facts-wrap .fact-inner .fact-content {
     font-size: 16px;
     line-height: 22px;
   }
